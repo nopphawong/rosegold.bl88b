@@ -16,7 +16,7 @@ $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 // $routes->set404Override();
 $routes->set404Override(function () {
-    return view('pages/not_found/index', ['title' => '404 - Page Not Fpund']);
+    return view('pages/not_found/index', ['title' => '404 - Page Not Found']);
 });
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
