@@ -222,4 +222,9 @@ return [
         'withdraw_table' => 'withdraw',
         'finished' => 'finished',
     ],
+    '404' => [
+        'back_btn' => 'Back',
+        'contact_btn' => 'Contact us',
+        'note' => 'we are sorry, but the page you requested was not found',
+    ],
 ];
