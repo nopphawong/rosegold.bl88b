@@ -1,0 +1,239 @@
+INFO - 2023-06-23 10:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 10:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 11:50:27 --> Undefined variable: footer
+in APPPATH/Views/pages/lucky_wheel/index.php on line 45.
+ 1 APPPATH/Views/pages/lucky_wheel/index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: footer', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/lucky_wheel/index.php', 45, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/lucky_wheel/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/lucky_wheel/index', [], true)
+ 5 APPPATH/Controllers/LuckyWheel.php(12): view('pages/lucky_wheel/index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LuckyWheel->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LuckyWheel))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 11:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 11:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 12:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:35:30 --> Undefined variable: formatter
+in APPPATH/Views/pages/profile/index.php on line 18.
+ 1 APPPATH/Views/pages/profile/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: formatter', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 5 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+ 6 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:36:11 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(27): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:37:58 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(27): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:38:05 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(27): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:38:48 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(27): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:38:50 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(27): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:41:32 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(27): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 13:44:00 --> Array to string conversion
+in SYSTEMPATH/Language/Language.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/vendor/codeigniter4/framework/system/Language/Language.php', 192, [...])
+ 2 SYSTEMPATH/Language/Language.php(192): MessageFormatter::formatMessage('en', 'Name: {0}', [...])
+ 3 SYSTEMPATH/Language/Language.php(120): CodeIgniter\Language\Language->formatMessage('Name: {0}', [...])
+ 4 SYSTEMPATH/Common.php(773): CodeIgniter\Language\Language->getLine('Lang.profile.username', [...])
+ 5 APPPATH/Views/pages/profile/index.php(29): lang('Lang.profile.username', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/profile/index.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/profile/index', [], true)
+ 9 APPPATH/Libraries/CustomView.php(19): view('pages/profile/index', [...])
+10 APPPATH/Controllers/Home.php(29): App\Libraries\CustomView::userView('pages/profile/index', [...])
+11 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->profilePage()
+12 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-23 13:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 13:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 14:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 14:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 14:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 14:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 14:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

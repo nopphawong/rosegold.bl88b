@@ -1,0 +1,385 @@
+CRITICAL - 2023-06-02 06:57:30 --> Call to undefined method CodeIgniter\View\View::bankFrom()
+in APPPATH/Views/pages/register/index.php on line 11.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('pages/register/index', [], true)
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/register/phone_number_form', [], true)
+ 5 APPPATH/Controllers/Register.php(29): view('pages/register/phone_number_form', [...])
+ 6 APPPATH/Controllers/Register.php(9): App\Controllers\Register->view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 07:17:23 --> Undefined variable: string
+in APPPATH/Views/pages/register/phone_number_form.php on line 6.
+ 1 APPPATH/Views/pages/register/phone_number_form.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: string', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/register/phone_number_form.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/register/phone_number_form.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/register/phone_number_form', [], true)
+ 5 APPPATH/Controllers/Register.php(28): view('pages/register/phone_number_form', [...])
+ 6 APPPATH/Controllers/Register.php(9): App\Controllers\Register->view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 07:18:59 --> Undefined variable: string
+in APPPATH/Views/pages/register/phone_number_form.php on line 6.
+ 1 APPPATH/Views/pages/register/phone_number_form.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: string', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/register/phone_number_form.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/register/phone_number_form.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/register/phone_number_form', [], true)
+ 5 APPPATH/Controllers/Register.php(28): view('pages/register/phone_number_form', [...])
+ 6 APPPATH/Controllers/Register.php(9): App\Controllers\Register->view()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:39:18 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+in APPPATH/Controllers/Register.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:39:38 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+in APPPATH/Controllers/Register.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:42:10 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 24.
+ 1 APPPATH/Controllers/Register.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:42:18 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 24.
+ 1 APPPATH/Controllers/Register.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:43:38 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 24.
+ 1 APPPATH/Controllers/Register.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:44:30 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 24.
+ 1 APPPATH/Controllers/Register.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:46:09 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 24.
+ 1 APPPATH/Controllers/Register.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 08:46:14 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 24.
+ 1 APPPATH/Controllers/Register.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 09:18:45 --> Call to undefined function testStep()
+in APPPATH/Views/pages/register/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('pages/register/index', [], true)
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/register/phone_number_form', [], true)
+ 5 APPPATH/Controllers/Register.php(54): view('pages/register/phone_number_form', [...])
+ 6 APPPATH/Controllers/Register.php(28): App\Controllers\Register->view([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->bankForm()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:09:38 --> Undefined index: section
+in APPPATH/Controllers/Register.php on line 53.
+ 1 APPPATH/Controllers/Register.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: section', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 53, [...])
+ 2 APPPATH/Controllers/Register.php(30): App\Controllers\Register->view([...])
+ 3 APPPATH/Controllers/Register.php(17): App\Controllers\Register->validatePhoneNumberForm()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:10:51 --> Undefined index: section
+in APPPATH/Controllers/Register.php on line 54.
+ 1 APPPATH/Controllers/Register.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: section', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 54, [...])
+ 2 APPPATH/Controllers/Register.php(30): App\Controllers\Register->view([...])
+ 3 APPPATH/Controllers/Register.php(17): App\Controllers\Register->validatePhoneNumberForm()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:11:44 --> Undefined index: section
+in APPPATH/Controllers/Register.php on line 53.
+ 1 APPPATH/Controllers/Register.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: section', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 53, [...])
+ 2 APPPATH/Controllers/Register.php(30): App\Controllers\Register->view([...])
+ 3 APPPATH/Controllers/Register.php(17): App\Controllers\Register->validatePhoneNumberForm()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:12:28 --> Undefined index: section
+in APPPATH/Controllers/Register.php on line 53.
+ 1 APPPATH/Controllers/Register.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: section', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 53, [...])
+ 2 APPPATH/Controllers/Register.php(30): App\Controllers\Register->view([...])
+ 3 APPPATH/Controllers/Register.php(17): App\Controllers\Register->validatePhoneNumberForm()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:13:07 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 53.
+ 1 APPPATH/Controllers/Register.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 53, [...])
+ 2 APPPATH/Controllers/Register.php(19): App\Controllers\Register->view([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:13:14 --> Array to string conversion
+in APPPATH/Controllers/Register.php on line 53.
+ 1 APPPATH/Controllers/Register.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 53, [...])
+ 2 APPPATH/Controllers/Register.php(19): App\Controllers\Register->view([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:14:36 --> Undefined index: section
+in APPPATH/Controllers/Register.php on line 56.
+ 1 APPPATH/Controllers/Register.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: section', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 56, [...])
+ 2 APPPATH/Controllers/Register.php(30): App\Controllers\Register->view([...])
+ 3 APPPATH/Controllers/Register.php(17): App\Controllers\Register->validatePhoneNumberForm()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 10:23:52 --> Undefined index: user
+in APPPATH/Controllers/Register.php on line 59.
+ 1 APPPATH/Controllers/Register.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Controllers/Register.php', 59, [...])
+ 2 APPPATH/Controllers/Register.php(19): App\Controllers\Register->view([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Register->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 12:42:47 --> Call to undefined function validation_list_errors()
+in APPPATH/Views/pages/login/index.php on line 13.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 4 APPPATH/Controllers/Login.php(12): view('pages/login/index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+INFO - 2023-06-02 12:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-02 12:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-02 15:36:23 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+in APPPATH/Controllers/LoginController.php on line 45.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:36:56 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+in APPPATH/Controllers/LoginController.php on line 45.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:38:14 --> Undefined variable: validation
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(16): view('pages/login/index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:38:19 --> Undefined variable: validation
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(16): view('pages/login/index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:38:41 --> Undefined variable: validation
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(16): view('pages/login/index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:41:53 --> Undefined variable: validation
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(16): view('pages/login/index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:49:42 --> Array to string conversion
+in APPPATH/Views/pages/login/index.php on line 19.
+ 1 APPPATH/Views/pages/login/index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 19, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(32): view('pages/login/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:50:10 --> Array to string conversion
+in APPPATH/Views/pages/login/index.php on line 19.
+ 1 APPPATH/Views/pages/login/index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 19, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(32): view('pages/login/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:52:16 --> Array to string conversion
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(45): view('pages/login/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:52:26 --> Array to string conversion
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(45): view('pages/login/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 15:53:33 --> Array to string conversion
+in APPPATH/Views/pages/login/index.php on line 18.
+ 1 APPPATH/Views/pages/login/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/pages/login/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/login/index', [], true)
+ 5 APPPATH/Controllers/LoginController.php(33): view('pages/login/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 16:25:30 --> Call to undefined function set_value()
+in APPPATH/Views/pages/forgot/index.php on line 9.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pages/forgot/index', [], true)
+ 4 APPPATH/Controllers/ForgotController.php(34): view('pages/forgot/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ForgotController->submit()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotController))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 17:20:41 --> Undefined variable: uri
+in APPPATH/Views/layouts/web/footer.php on line 8.
+ 1 APPPATH/Views/layouts/web/footer.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: uri', '/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/layouts/web/footer.php', 8, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/app/Views/layouts/web/footer.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('layouts/web/footer', [], true)
+ 5 APPPATH/Controllers/RegisterController.php(45): view('layouts/web/footer')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RegisterController->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegisterController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')
+CRITICAL - 2023-06-02 17:27:42 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH/Views/layouts/web/footer.php on line 46.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('layouts/web/footer', [], true)
+ 3 APPPATH/Controllers/RegisterController.php(45): view('layouts/web/footer')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RegisterController->submit()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegisterController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/natnopphawong/Developer/Workshops/PHP/bl88bet_dev/ci4_bl88bet/public/index.php')

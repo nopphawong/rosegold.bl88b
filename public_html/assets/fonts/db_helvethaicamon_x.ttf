@@ -1,0 +1,93 @@
+<html class="loading" lang="en" data-layout="dark-layout" data-textdirection="ltr">
+    <!-- BEGIN: Head-->
+
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="PIXINVENT">
+        <title>ฺBL88 Error - 403</title>
+        <link rel="apple-touch-icon" href="../images/apple-icon-120.png">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon_1.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" href="../css/bootstrap.min_1.css">
+        <link rel="stylesheet" href="../css/all.min_1.css">
+        <link rel="stylesheet" href="../css/common_1.css">
+        <link rel="stylesheet" href="../css/lobby_1.css">
+        <!-- END: Vendor CSS-->
+
+
+    </head>
+    <!-- END: Head-->
+
+    <!-- BEGIN: Body-->
+
+    <body class="bg-img-dark">
+        <!-- BEGIN: Content-->
+
+        <!-- END: Content-->
+
+
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+
+            </div>
+            <div class="content-body text-center">
+                <div class="content-wrapper">
+                    <img src="../images/logo.png" class="padding-2" height="25%" alt="alt">
+                    <h3 class="text-white">ERROR 403</h3>
+                    <!-- Not authorized-->
+
+<!--                <img src="assets/image/logo1_bl88.png" alt="alt"/>
+           <h1 class="text-lighten-1">ERROR 403</h1>-->
+                    <div class="misc-wrapper">
+                        <div class="misc-inner padding-7 p-sm-3 panel-guild">
+                            <div class="w-100 text-center">
+                                <h4 class="mb-1 text-white">ไม่ได้เข้าสู่ระบบ! 🔐</h4>
+                                <p class="mb-2 font-size-08">
+                                    คุณไม่ได้รับอนุญาตให้เข้าถึงข้อมูลไซต์นี้ โปรดติดต่อผู้ดูแลระบบ
+                                </p>
+                                <a class="btn btn-gold mb-1 text-black font-size-09" href="https://www.bl88bet.com">ย้อนกลับสู่ระบบ login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Not authorized-->
+                </div>
+            </div>
+        </div>
+
+        <!-- BEGIN: Vendor JS-->
+        <script src="../js/vendors.min.js"></script>
+        <!-- BEGIN Vendor JS-->
+
+        <!-- BEGIN: Page Vendor JS-->
+        <!-- END: Page Vendor JS-->
+
+        <!-- BEGIN: Theme JS-->
+
+        <!-- END: Theme JS-->
+
+        <!-- BEGIN: Page JS-->
+        <!-- END: Page JS-->
+
+        <script>
+            $(window).on('load', function () {
+                if (feather) {
+                    feather.replace({
+                        width: 14,
+                        height: 14
+                    });
+                }
+            })
+        </script>
+    </body>
+    <!-- END: Body-->
+
+</html>
