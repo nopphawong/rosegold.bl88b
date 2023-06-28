@@ -27,7 +27,7 @@ $formatter = new CustomFormatter()
                         <div class="wallet__main--amount mobile">
                             <span class="font-size-09"><?= lang('Lang.home.credit_balance') ?></span>
                             <?php if (isset($result) && isset($result->status)) : ?>
-                                <p class="amount-member"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
+                                <p id="m_credit" class="amount-member"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
                             <?php else : ?>
                                 <p class="amount-member">???</p>
                             <?php endif; ?>
@@ -35,12 +35,13 @@ $formatter = new CustomFormatter()
                         <div class="wallet__main--cashback text-center justify-content-center line-h-27-px">
 
                         </div>
+                        <button class="btn wallet__refresh_btn" onclick="refreshCredit()"><?= lang('Lang.home.refresh_btn') ?></button>
                         <div class="wallet__main--bonus text-center justify-content-center  d-inline-block ">
                             <div class="wallet__datetime">
                                 <img src="assets/images/misc/calendar.png" class="w-10">
-                                <span id="real_date_m" class="font-size-07">01/01/2023</span>
+                                <div id="real_date_m" class="font-size-07">01/01/2023</div>
                                 <img src="assets/images/misc/time.png" class="w-10">
-                                <span id="real_time_m" class="font-size-07">00:00:00</span>
+                                <div id="real_time_m" class="font-size-07">00:00:00</div>
                             </div>
                         </div>
                         <div class="wallet__main--bonus ">
@@ -168,17 +169,18 @@ $formatter = new CustomFormatter()
                                                 <div class="wallet__main--amount desktop">
                                                     <span class=""><?= lang('Lang.home.credit_balance') ?></span>
                                                     <?php if (isset($result) && isset($result->status)) : ?>
-                                                        <p class="amount-member"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
+                                                        <p id="d_credit" class="amount-member"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
                                                     <?php else : ?>
                                                         <p class="amount-member">???</p>
                                                     <?php endif; ?>
                                                 </div>
+                                                <button class="btn wallet__refresh_btn" onclick="refreshCredit()"><?= lang('Lang.home.refresh_btn') ?></button>
                                                 <div class="wallet__main--bonus text-center justify-content-center  d-inline-block ">
                                                     <div class="wallet__datetime">
                                                         <img src="assets/images/misc/calendar.png" class="w-10">
-                                                        <span id="real_date" class="font-size-07">01/01/2023</span>
+                                                        <div id="real_date" class="font-size-07">01/01/2023</div>
                                                         <img src="assets/images/misc/time.png" class="w-10">
-                                                        <span id="real_time" class="font-size-07">00:00:00</span>
+                                                        <div id="real_time" class="font-size-07">00:00:00</div>
                                                     </div>
                                                 </div>
                                                 <div class="wallet__main--bonus ">
@@ -260,6 +262,50 @@ $formatter = new CustomFormatter()
             swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
         }
     <?php endif; ?>
+
+    // NOTE: Refresh Credit
+    function refreshCredit() {
+        $.ajax({
+            url: '<?= base_url('/refresh') ?>',
+            method: 'get',
+            processData: false,
+            contentType: false,
+            cache: false,
+            beforeSend: function() {
+                spinner('show')
+            },
+            success: function(response) {
+                spinner('hide')
+                try {
+                    const {
+                        status,
+                        msg
+                    } = JSON.parse(response)
+                    if (status === true) {
+                        const {
+                            data
+                        } = JSON.parse(response)
+                        $('#nav_credit').html(Number(data.webbalance).toLocaleString('en', {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        }))
+                        const thBath = new Intl.NumberFormat('th-TH', {
+                            style: 'currency',
+                            currency: 'THB',
+                        })
+                        $('#m_credit').html(thBath.format(data.webbalance))
+                        $('#d_credit').html(thBath.format(data.webbalance))
+                    }
+                } catch (err) {
+                    console.log(err);
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Logout:261']) ?>')
+            }
+        })
+    }
 
     // NOTE: Logout
     $('#logout_btn').on('click', function(e) {

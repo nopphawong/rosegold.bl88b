@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
+use App\Controllers\Home;
 
-class Slot extends BaseController
+class Slot extends Home
 {
     public function index()
     {
@@ -33,5 +33,4 @@ class Slot extends BaseController
         $this->viewData['result'] = $result;
         return  $this->cv->userView('pages/slot/index', $this->headerInfo, $this->viewData);
     }
-
 }

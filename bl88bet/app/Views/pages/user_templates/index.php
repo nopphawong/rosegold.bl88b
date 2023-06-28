@@ -72,7 +72,7 @@
                 <div class="form-group has-search">
                     <span class="fa-solid fa-wallet form-control-feedback"></span>
                     <div class="form-control user-panel">
-                        <span class=" -amount"><?= number_format(session()->webbalance, 2) ?></span> ฿
+                        <span id="nav_credit" class="-amount"><?= number_format(session()->webbalance, 2) ?></span> ฿
                     </div>
                 </div>
 

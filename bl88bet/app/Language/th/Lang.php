@@ -129,6 +129,7 @@ return [
         'lucky_wheel' => 'กงล้อ',
         'logout' => 'ออกจากระบบ',
         'confirm_logout' => 'ต้องการออกจากระบบหรือไม่?',
+        'refresh_btn' => 'รีเฟรช'
     ],
     'lucky_wheel' => [
         'lucky_wheel' => 'กงล้อนำโชค'

@@ -16,7 +16,7 @@
     <!-- Desktop CSS -->
     <?= link_tag('assets/css/desktop_common.css') ?>
     <!-- Lobby CSS -->
-    <?= link_tag('assets/css/lobby.css') ?>
+    <?= link_tag('assets/css/lobby.css?v=1.0.4') ?>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <!-- Google font -->

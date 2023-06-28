@@ -22,7 +22,7 @@ class Home extends BaseController
     //   "tovwiddate": "0000-00-00 00:00:00"
     // }
 
-    public function index()
+    public function __construct()
     {
         $body = [
             'user' => session()->data->userid,
@@ -34,7 +34,7 @@ class Home extends BaseController
         $response = $service->serverService('m_webbalance', POST, $body);
         $result = json_decode($response);
         if ($result->status) {
-            $this->session->set(['webbalance' => $result->data->webbalance]);
+            session()->set(['webbalance' => $result->data->webbalance]);
         }
         // {
         //     "status": true,
@@ -46,6 +46,10 @@ class Home extends BaseController
         //     }
         //   }
         $this->viewData['result'] = $result;
+    }
+
+    public function index()
+    {
         return  $this->cv->userView('pages/home/index', $this->headerInfo, $this->viewData);
     }
 
@@ -68,6 +72,25 @@ class Home extends BaseController
     public function rewardPage()
     {
         return  $this->cv->userView('pages/reward/index', $this->headerInfo);
+    }
+
+    public function refreshCredit()
+    {
+        if ($this->request->isAJAX()) {
+            $body = [
+                'user' => session()->data->userid,
+                'token' => session()->data->token,
+                'web' => session()->data->web,
+                'webuser' => session()->data->webuser,
+            ];
+            $service = new APIService();
+            $response = $service->serverService('m_webbalance', POST, $body);
+            $result = json_decode($response);
+            if ($result->status) {
+                session()->set(['webbalance' => $result->data->webbalance]);
+            }
+            return $response;
+        }
     }
 
     public function playgame()

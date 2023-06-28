@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
+use App\Controllers\Home;
 
-class Sport extends BaseController
+class Sport extends Home
 {
     public function index()
     {

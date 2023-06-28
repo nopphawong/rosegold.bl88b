@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
+use App\Controllers\Home;
 
-class Casino extends BaseController
+class Casino extends Home
 {
     public function index()
     {

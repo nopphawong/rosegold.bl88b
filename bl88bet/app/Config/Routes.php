@@ -35,6 +35,7 @@ $routes->set404Override(function () {
 $routes->get('lang/{locale}', 'Language::index');
 $routes->get('/', 'Home::index', ['filter' => 'authGuard']);
 $routes->post('/playgame', 'Home::playgame', ['filter' => 'authGuard']);
+$routes->get('/refresh', 'Home::refreshCredit', ['filter' => 'authGuard']);
 
 $routes->match(['get', 'post'], '/casino', 'Casino::index', ['filter' => 'authGuard']);
 $routes->match(['get', 'post'], '/slot', 'Slot::index', ['filter' => 'authGuard']);

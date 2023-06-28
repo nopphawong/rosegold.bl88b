@@ -129,6 +129,7 @@ return [
         'lucky_wheel' => 'Lucky Wheel',
         'logout' => 'Logout',
         'confirm_logout' => 'You are sure?',
+        'refresh_btn' => 'Refresh'
     ],
     'lucky_wheel' => [
         'lucky_wheel' => 'Lucky Wheel'
