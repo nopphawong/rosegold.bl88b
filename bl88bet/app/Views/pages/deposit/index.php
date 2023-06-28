@@ -44,9 +44,9 @@ $formatter = new CustomFormatter()
             </div>
             <div class="col-12 font-size-3vw padding-5 letter-spacing-1">
                 <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.account_registered') ?></p>
-                <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.bank_name', [$formatter->bank_format(session()->bank)]) ?></p>
-                <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.bank_account_number', [$formatter->bank_ac_no_format(session()->bank_ac_no)]) ?></p>
-                <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.username', [session()->name]) ?></p>
+                <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
+                <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
+                <p class="text-white font-line font-size-07"><?= lang('Lang.deposit.username', [session()->data->name]) ?></p>
                 <div class="row pad-l-4vw padding-2 display-flex w-100 margin-auto">
                     <div class="display-flex">
                         <label class="radio-circle"><?= lang('Lang.deposit.get_bonus') ?>
@@ -122,9 +122,9 @@ $formatter = new CustomFormatter()
         <div class="col-md-6 text-left pad-left-0 padding-4">
             <div class="col-12 font-size-08  letter-spacing-1 padding-4">
                 <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.account_registered') ?></p>
-                <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.bank_name', [$formatter->bank_format(session()->bank)]) ?></p>
-                <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.bank_account_number', [$formatter->bank_ac_no_format(session()->bank_ac_no)]) ?></p>
-                <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.username', [session()->name]) ?></p>
+                <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
+                <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
+                <p class="text-white font-line font-size-08"><?= lang('Lang.deposit.username', [session()->data->name]) ?></p>
 
             </div>
         </div>

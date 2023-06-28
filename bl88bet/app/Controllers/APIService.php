@@ -9,15 +9,26 @@ class APIService extends BaseController
 
     public function serverService($path, $method, $data)
     {
-        $appid  = 'AG059';
-        $secret = 'aghejee8tzh74';
-        $apiurl = 'https://demoapi.botbo21.com/apiv1/user/';
-        $endpoints = array('m_checkexits', 'm_bankverifyx', 'm_registerx', 'm_login', 'm_sentotp', 'm_forgetpass');
+        $appid  = WEB_AGENT;
+        $secret = SECRET;
+        $apiurl = API_URL;
+        $endpoints = [
+            'm_checkexits',
+            'm_bankverifyx',
+            'm_registerx',
+            'm_login',
+            'm_sentotp',
+            'm_forgetpass',
+            'm_webbalance',
+            'm_weblistgame',
+            'm_weblogin',
+        ];
 
         if (in_array($path, $endpoints)) {
-            $vdata = array_merge(array(
-                'appid' => $appid,
-            ), $data);
+            $vdata = array_merge(
+                ['appid' => $appid,],
+                $data
+            );
         } else {
             echo 'no api';
             exit();

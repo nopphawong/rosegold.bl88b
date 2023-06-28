@@ -219,9 +219,10 @@ return [
         'withdraw_table' => 'ถอน',
         'finished' => 'เสร็จสิ้น',
     ],
-    '404' => [
+    'error' => [
         'back_btn' => 'กลับ',
         'contact_btn' => 'ติดต่อเรา',
         'note' => 'ขออภัย ไม่พบหน้านี้',
+        'something_went_wrong' => 'เกิดข้อผิดพลาดบางอย่าง!, {0}',
     ],
 ];

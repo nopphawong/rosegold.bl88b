@@ -17,7 +17,11 @@ $formatter = new CustomFormatter()
                     <div class="wallet__main blackgray">
                         <div class="wallet__main--amount mobile">
                             <span class="font-size-09"><?= lang('Lang.home.credit_balance') ?></span>
-                            <p class="amount-member"><?= number_to_currency(1000.00, 'THB', 'th', 2); ?></p>
+                            <?php if (isset($result) && isset($result->status)) : ?>
+                                <p class="amount-member"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
+                            <?php else : ?>
+                                <p class="amount-member">???</p>
+                            <?php endif; ?>
                         </div>
                         <div class="wallet__main--cashback text-center justify-content-center line-h-27-px">
 
@@ -142,8 +146,8 @@ $formatter = new CustomFormatter()
             <div class="wallet-desktop">
                 <div class="row">
                     <div class="col-md-3 text-left user-panel-detail">
-                        <p><?= lang('Lang.home.username', [session()->name]) ?></p>
-                        <p><?= lang('Lang.home.phone_number', [$formatter->phone_format(session()->tel)]) ?></p>
+                        <p><?= lang('Lang.home.username', [session()->data->name]) ?></p>
+                        <p><?= lang('Lang.home.phone_number', [$formatter->phone_format(session()->data->tel)]) ?></p>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
@@ -154,7 +158,11 @@ $formatter = new CustomFormatter()
                                             <div class="wallet__main blackgray">
                                                 <div class="wallet__main--amount desktop">
                                                     <span class=""><?= lang('Lang.home.credit_balance') ?></span>
-                                                    <p class="amount-member"><?= number_to_currency(1000.00, 'THB', 'th', 2); ?></p>
+                                                    <?php if (isset($result) && isset($result->status)) : ?>
+                                                        <p class="amount-member"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
+                                                    <?php else : ?>
+                                                        <p class="amount-member">???</p>
+                                                    <?php endif; ?>
                                                 </div>
                                                 <div class="wallet__main--bonus text-center justify-content-center  d-inline-block ">
                                                     <div class="wallet__datetime">
@@ -217,8 +225,8 @@ $formatter = new CustomFormatter()
                     <div class="col-md-3">
                         <div class="row text-right justify-content-end">
                             <div class="col-12 text-left user-panel-detail">
-                                <p><?= lang('Lang.home.bank_account_number', [$formatter->bank_ac_no_format(session()->bank_ac_no)]) ?></p>
-                                <p><?= lang('Lang.home.bank_name', [$formatter->bank_format(session()->bank)]) ?></p>
+                                <p><?= lang('Lang.home.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
+                                <p><?= lang('Lang.home.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
                             </div>
                             <a href="http://line.me/ti/p/~@882yztsp" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/images/misc/line.png" style="width: 5vw;">
@@ -234,6 +242,17 @@ $formatter = new CustomFormatter()
 <?= $footer ?>
 
 <script>
+    <?php if (isset($result)) : ?>
+        const {
+            status,
+            msg
+        } = JSON.parse('<?= json_encode($result) ?>')
+        if (!status) {
+            swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
+        }
+    <?php endif; ?>
+
+
     // NOTE: Logout
     $('#logout_btn').on('click', function(e) {
         e.preventDefault()
@@ -258,7 +277,7 @@ $formatter = new CustomFormatter()
                     },
                     error: function(err) {
                         console.log(err);
-                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.dialog.network_error') ?>')
+                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Logout:261']) ?>')
                     }
                 })
             }

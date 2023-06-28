@@ -66,7 +66,7 @@ class Register extends BaseController
                 }
 
                 $verifBankData = [
-                    'accno' => trim_replace('-', '', $bankAccountNo),
+                    'accno' => trimReplace('-', '', $bankAccountNo),
                     'bankid' => $bankAccountID
                 ];
 
@@ -74,11 +74,9 @@ class Register extends BaseController
                 $response = $service->serverService('m_bankverifyx', POST, $verifBankData);
                 $result = json_decode($response);
                 $this->viewData['result'] = $result;
-
                 if ($result->status != 1) {
                     return  $this->cv->webView('pages/register/bank_form', $this->headerInfo, $this->viewData);
                 }
-
                 return  $this->cv->webView('pages/register/account_form', $this->headerInfo, $this->viewData);
             } else {
                 $rules = [
@@ -124,18 +122,18 @@ class Register extends BaseController
                 $pass = trim($this->request->getVar('register_password'));
                 $name = $this->request->getVar('register_bank_account_name');
 
-                $data = [
+                $body = [
                     'user' => $user,
                     'pass' => $pass,
                     'name' => $name,
                     'bankid' => $bankAccountID,
-                    'bankno' => trim_replace('-', '', $bankAccountNo),
+                    'bankno' => trimReplace('-', '', $bankAccountNo),
                     'otpcode' => '123456',
                     'otpref' => 'PDFDA'
                 ];
 
                 $service = new APIService();
-                $response = $service->serverService('m_registerx', POST, $data);
+                $response = $service->serverService('m_registerx', POST, $body);
                 $result = json_decode($response);
                 $this->viewData['result'] = $result;
 
@@ -156,14 +154,9 @@ class Register extends BaseController
                     return $this->cv->webView('pages/register/account_form', $this->headerInfo, $this->viewData);
                 }
 
+                $data = transformAuthData($result->data);
                 $ses_data = [
-                    'userid' => $result->data->userid,
-                    'name' => $result->data->name,
-                    'tel' => $result->data->tel,
-                    'bank' => $result->data->bank,
-                    'email' => $result->data->email,
-                    'lineid' => $result->data->lineid,
-                    'token' => $result->data->token,
+                    'data' => $data,
                     'logged_in' => TRUE
                 ];
                 $this->session->set($ses_data);

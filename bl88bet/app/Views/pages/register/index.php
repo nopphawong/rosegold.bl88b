@@ -4,6 +4,10 @@
 
 <form action="<?= base_url('register') ?>" method="post" id="register_form" enctype="multipart/form-data">
     <?= csrf_field() ?>
+    <div class="col text-right">
+        <a href="<?= site_url('lang/th'); ?>"><img src="assets/images/th.png" class="lang"></a>
+        <a href="<?= site_url('lang/en'); ?>"><img src="assets/images/en.png" class="lang"></a>
+    </div>
     <h1 class="text-center"><i class="fas fa-pen mr-2"></i><?= lang('Lang.register.register') ?></h1>
 
     <?= $this->renderSection('register_form') ?>

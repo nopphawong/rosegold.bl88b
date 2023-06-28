@@ -3,6 +3,10 @@
 <?= $this->section('content'); ?>
 
 <form action="#" method="post" id="forgot_form" enctype="multipart/form-data">
+    <div class="col text-right">
+        <a href="<?= site_url('lang/th'); ?>"><img src="assets/images/th.png" class="lang"></a>
+        <a href="<?= site_url('lang/en'); ?>"><img src="assets/images/en.png" class="lang"></a>
+    </div>
     <h1 class="text-center"> <i class="fas fa-question mr-2"></i><?= lang('Lang.forgot.forgot') ?></h1>
     <?= csrf_field() ?>
     <div class="form-group icon-inside">
@@ -85,11 +89,7 @@
 
                     },
                     error: function(xhr, textStatus, errorThrown) {
-                        console.log(xhr, textStatus, errorThrown);
-                        if (textStatus == 'timeout') {
-                            swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.dialog.network_error') ?>')
-                        }
-
+                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Forgot:92']) ?>')
                     }
                 })
             },

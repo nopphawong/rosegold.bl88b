@@ -177,9 +177,9 @@
             <div class="notfound-404">
                 <h1>404</h1>
             </div>
-            <h2><?= lang('Lang.404.note') ?></h2>
-            <a href="<?= site_url('/back') ?>" class="home-btn"><?= lang('Lang.404.back_btn') ?></a>
-            <a href="http://line.me/ti/p/~@882yztsp" class="contact-btn"><?= lang('Lang.404.contact_btn') ?></a>
+            <h2><?= lang('Lang.error.note') ?></h2>
+            <a href="<?= site_url('/back') ?>" class="home-btn"><?= lang('Lang.error.back_btn') ?></a>
+            <a href="http://line.me/ti/p/~@882yztsp" class="contact-btn"><?= lang('Lang.error.contact_btn') ?></a>
         </div>
     </div>
 </body>

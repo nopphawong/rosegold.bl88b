@@ -34,9 +34,14 @@ $routes->set404Override(function () {
 // route since we don't have to scan directories.
 $routes->get('lang/{locale}', 'Language::index');
 $routes->get('/', 'Home::index', ['filter' => 'authGuard']);
-$routes->get('/casino', 'Home::casinoPage', ['filter' => 'authGuard']);
-$routes->get('/slot', 'Home::slotPage', ['filter' => 'authGuard']);
-$routes->get('/sport', 'Home::sportPage', ['filter' => 'authGuard']);
+
+$routes->match(['get', 'post'], '/casino', 'Casino::index', ['filter' => 'authGuard']);
+
+$routes->match(['get', 'post'], '/slot', 'Slot::index', ['filter' => 'authGuard']);
+$routes->post('/slot/playgame', 'Slot::playgame', ['filter' => 'authGuard']);
+
+$routes->match(['get', 'post'], '/sport', 'Sport::index', ['filter' => 'authGuard']);
+
 $routes->get('/profile', 'Home::profilePage', ['filter' => 'authGuard']);
 $routes->get('/promotion', 'Home::promotionPage', ['filter' => 'authGuard']);
 $routes->get('/history-withdraw', 'Home::historyWithdrawPage', ['filter' => 'authGuard']);

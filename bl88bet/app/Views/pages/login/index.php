@@ -81,7 +81,6 @@
                                 msg,
                                 data
                             } = JSON.parse(response)
-                            console.log(JSON.parse(response));
                             if (!status) {
                                 swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
                             } else {
@@ -98,7 +97,7 @@
                     },
                     error: function(err) {
                         console.log(err);
-                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.dialog.network_error') ?>')
+                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Login 101']) ?>')
                     }
                 })
             },

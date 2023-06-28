@@ -29,11 +29,11 @@ class CustomFormatter
      */
     public static function bank_ac_no_format($input)
     {
+        $bank = explode('-', $input);
+        if (count($bank) < 2) return '-';
         // Keep only be digits.
-        $strBankNo = preg_replace("[^0-9]", '', $input);
-        if (strlen($strBankNo) != 10) {
-            return $strBankNo;
-        }
+        $strBankNo = preg_replace("[^0-9]", '', $bank[1]);
+        if (strlen($strBankNo) != 10) return $strBankNo;
 
         $strFirst = substr($strBankNo, 0, 3);
         $strSecond = substr($strBankNo, 3, 1);
@@ -50,6 +50,7 @@ class CustomFormatter
      */
     public static function bank_format($input)
     {
-        return lang('Lang.bank_list.' . strtolower($input));
+        $bank =  explode('-', $input);
+        return lang('Lang.bank_list.' . strtolower($bank[0]));
     }
 }

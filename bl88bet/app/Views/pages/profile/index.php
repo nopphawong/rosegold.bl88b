@@ -22,9 +22,9 @@ $formatter = new CustomFormatter()
                         <img src="assets/images/scb.png" class="img-bank">
                     </div>
                     <div class="col-8 text-left bank-profile-acc">
-                        <p class="font-size-06"><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->bank_ac_no)]) ?></p>
-                        <p class="font-size-06"><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->bank)]) ?></p>
-                        <p class="font-size-06"><?= lang('Lang.profile.username', [session()->name]) ?></p>
+                        <p class="font-size-06"><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
+                        <p class="font-size-06"><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
+                        <p class="font-size-06"><?= lang('Lang.profile.username', [session()->data->name]) ?></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@ $formatter = new CustomFormatter()
                                 <img src="assets/images/scb.png" class="img-bank">
                             </div>
                             <div class="col-sm-8 text-left pad-left-0 bank-profile-acc">
-                                <p><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->bank_ac_no)]) ?></p>
-                                <p><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->bank)]) ?></p>
-                                <p><?= lang('Lang.profile.username', [session()->name]) ?></p>
+                                <p><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
+                                <p><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
+                                <p><?= lang('Lang.profile.username', [session()->data->name]) ?></p>
                             </div>
                         </div>
                     </div>

@@ -2,28 +2,86 @@
 
 <?= $this->section('content'); ?>
 
-<?php $list = array('1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png', '28.png', '29.png', '30.png', '31.png', '32.png', '33.png', '34.png'); ?>
-
 <div class="main mobile--">
     <div class="row">
-        <?php foreach ($list as $val) : ?>
-            <div class="col-12 col-md-12 text-center padding-2 col-banner">
-                <img src="assets/images/slot/mobile/<?= $val ?>" data-original="assets/images/slot/mobile/<?= $val ?>" class="img-fluid w-90 lazy">
-            </div>
-        <?php endforeach; ?>
+        <?php if (isset($result) && isset($result->data)) : ?>
+            <?php foreach ($result->data as $obj) : ?>
+                <div class="col-12 col-md-12 text-center padding-2 col-banner">
+                    <a href="#" onclick="playgame(event, '<?= $obj->code ?>')">
+                        <img src="assets/images/slot/mobile/<?= strtolower($obj->code) ?>.png" data-original="assets/images/slot/mobile/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 </div>
 
 <div class="container game-container desktop--">
     <div class="row">
-        <?php foreach ($list as $val) : ?>
-            <div class="col-md-3 col-md-3 padding-game text-center text-center padding-2 col-banner">
-                <img src="assets/images/slot/desktop/<?= $val ?>" data-original="assets/images/slot/desktop/<?= $val ?>" class="img-fluid w-90 lazy">
-            </div>
-        <?php endforeach; ?>
+        <?php if (isset($result) && isset($result->data)) : ?>
+            <?php foreach ($result->data as $obj) : ?>
+                <div class="col-md-3 col-md-3 padding-game text-center text-center padding-2 col-banner">
+                    <a href="#" onclick="playgame(event, '<?= $obj->code ?>')">
+                        <img src="assets/images/slot/desktop/<?= strtolower($obj->code) ?>.png" data-original="assets/images/slot/desktop<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
+                    </a>
+                </div>
+
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 </div>
 
 <?= $footer ?>
+
+<script>
+    <?php if (isset($result)) : ?>
+        <?php unset($result->data); ?>
+        const {
+            status,
+            msg
+        } = JSON.parse('<?= json_encode($result) ?>')
+        if (!status) {
+            swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
+        }
+    <?php endif; ?>
+
+
+    function playgame(event, code) {
+        event.preventDefault();
+        const formData = new FormData()
+        formData.set('game_code', code)
+        $.ajax({
+            url: '<?= base_url('/slot/playgame') ?>',
+            method: 'post',
+            data: formData,
+            processData: false,
+            contentType: false,
+            cache: false,
+            beforeSend: function() {
+                spinner('show')
+            },
+            success: function(response) {
+                spinner('hide')
+                try {
+                    const {
+                        status,
+                        msg,
+                        data
+                    } = JSON.parse(response)
+                    if (status === true) {
+                        window.location.replace(data.url);
+                    }
+                } catch (err) {
+                    console.log(err);
+                    toastr.error(err)
+                }
+            },
+            error: function(err) {
+                swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Slot:81']) ?>')
+            }
+        })
+
+    }
+</script>
 
 <?= $this->endSection(); ?>

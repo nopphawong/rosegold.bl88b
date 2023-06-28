@@ -38,7 +38,7 @@
     <i class="fas fa-address-book"></i>
 </div>
 <div class="form-group icon-inside">
-    <input name="register_bank_account_name" class="form-control" type="text" placeholder="<?= lang('Lang.register.bank_account') ?>" value="<?= isset($result) ? set_value('register_bank_account_name', $result->data->accName) : set_value('register_bank_account_name') ?>" readonly>
+    <input name="register_bank_account_name" class="form-control" type="text" placeholder="<?= lang('Lang.register.bank_account') ?>" value="<?= isset($result) && isset($result->data) ? set_value('register_bank_account_name', $result->data->accName) : set_value('register_bank_account_name') ?>" readonly>
     <i class="far fa-user"></i>
 </div>
 <div class="form-group icon-inside">

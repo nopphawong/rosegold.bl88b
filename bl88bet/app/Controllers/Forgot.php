@@ -47,9 +47,7 @@ class Forgot extends BaseController
 
             if (!$body['user'] || !$body['otpref']) return redirect()->to('forgot');
 
-            $this->viewData = array_merge(array(
-                $this->viewData
-            ), $body);
+            $this->viewData = array_merge($this->viewData, $body);
             return $this->cv->webView('pages/forgot/repass', $this->headerInfo, $this->viewData);
         }
     }

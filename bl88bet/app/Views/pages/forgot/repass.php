@@ -123,7 +123,7 @@
                     },
                     error: function(err) {
                         console.log(err);
-                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.dialog.network_error') ?>')
+                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Repass:126']) ?>')
                     }
                 })
             },

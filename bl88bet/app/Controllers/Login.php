@@ -25,16 +25,9 @@ class Login extends BaseController
             $response = $service->serverService('m_login', POST, $credential);
             $result = json_decode($response);
             if ($result->status == 1) {
-                $bank = explode('-', $result->data->bank);
+                $data = transformAuthData($result->data);
                 $ses_data = [
-                    'userid' => $result->data->userid,
-                    'name' => $result->data->name,
-                    'tel' => $result->data->tel,
-                    'bank' => $bank[0],
-                    'bank_ac_no' => $bank[1],
-                    'email' => $result->data->email,
-                    'lineid' => $result->data->lineid,
-                    'token' => $result->data->token,
+                    'data' => $data,
                     'logged_in' => TRUE
                 ];
                 $this->session->set($ses_data);
