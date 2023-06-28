@@ -4,7 +4,7 @@
             <div class="col-xl-6">
                 <div class="d-flexx">
                     <div>
-                        <img src="assets/images/bl88-logo.png" alt="log" class="logo">
+                        <img src="assets/images/bl88-logo-2.png" alt="log" class="logo">
                         <div class="pc-pathnership mb-x">
                             <?= $partner ?>
                         </div>

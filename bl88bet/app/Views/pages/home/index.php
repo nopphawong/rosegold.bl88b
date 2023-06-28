@@ -9,6 +9,15 @@ $formatter = new CustomFormatter()
 
 <?= $this->section('content'); ?>
 
+<script>
+    setInterval(() => {
+        $('#real_date_m').html(dayjs().format('DD/MM/YYYY'))
+        $('#real_time_m').html(dayjs().format('HH:mm:ss'))
+        $('#real_date').html(dayjs().format('DD/MM/YYYY'))
+        $('#real_time').html(dayjs().format('HH:mm:ss'))
+    }, 1000);
+</script>
+
 <div class="main mobile--">
     <div class="col-12 col-md-12 pad-lr-0">
         <div class="wrapper wrapper-top">
@@ -29,9 +38,9 @@ $formatter = new CustomFormatter()
                         <div class="wallet__main--bonus text-center justify-content-center  d-inline-block ">
                             <div class="wallet__datetime">
                                 <img src="assets/images/misc/calendar.png" class="w-10">
-                                <span class="font-size-07">12/01/2022</span>
+                                <span id="real_date_m" class="font-size-07">01/01/2023</span>
                                 <img src="assets/images/misc/time.png" class="w-10">
-                                <span class="font-size-07">19:55:32</span>
+                                <span id="real_time_m" class="font-size-07">00:00:00</span>
                             </div>
                         </div>
                         <div class="wallet__main--bonus ">
@@ -167,9 +176,9 @@ $formatter = new CustomFormatter()
                                                 <div class="wallet__main--bonus text-center justify-content-center  d-inline-block ">
                                                     <div class="wallet__datetime">
                                                         <img src="assets/images/misc/calendar.png" class="w-10">
-                                                        <span class="font-size-07">12/01/2022</span>
+                                                        <span id="real_date" class="font-size-07">01/01/2023</span>
                                                         <img src="assets/images/misc/time.png" class="w-10">
-                                                        <span class="font-size-07">19:55:32</span>
+                                                        <span id="real_time" class="font-size-07">00:00:00</span>
                                                     </div>
                                                 </div>
                                                 <div class="wallet__main--bonus ">
@@ -251,7 +260,6 @@ $formatter = new CustomFormatter()
             swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
         }
     <?php endif; ?>
-
 
     // NOTE: Logout
     $('#logout_btn').on('click', function(e) {

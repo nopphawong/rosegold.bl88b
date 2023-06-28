@@ -33,6 +33,9 @@ class Home extends BaseController
         $service = new APIService();
         $response = $service->serverService('m_webbalance', POST, $body);
         $result = json_decode($response);
+        if ($result->status) {
+            $this->session->set(['webbalance' => $result->data->webbalance]);
+        }
         // {
         //     "status": true,
         //     "msg": "",
@@ -65,6 +68,24 @@ class Home extends BaseController
     public function rewardPage()
     {
         return  $this->cv->userView('pages/reward/index', $this->headerInfo);
+    }
+
+    public function playgame()
+    {
+        if ($this->request->isAJAX()) {
+            $body = [
+                'user' => session()->data->userid,
+                'token' => session()->data->token,
+                'web' => session()->data->web,
+                'webuser' => session()->data->webuser,
+                'webpass' => session()->data->webpass,
+                'webgame' => $this->request->getVar('game_code'),
+            ];
+            $service = new APIService();
+            $response = $service->serverService('m_weblogin', POST, $body);
+
+            return $response;
+        }
     }
 
     public function logout()

@@ -28,6 +28,8 @@
     <link href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css" rel="stylesheet">
     <!-- Loader CSS -->
     <?= link_tag('assets/css/loader.css') ?>
+    <!-- Day JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/dayjs@1.11.8/dayjs.min.js"></script>
 </head>
 
 <body>

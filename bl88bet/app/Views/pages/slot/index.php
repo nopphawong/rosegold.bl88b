@@ -51,7 +51,7 @@
         const formData = new FormData()
         formData.set('game_code', code)
         $.ajax({
-            url: '<?= base_url('/slot/playgame') ?>',
+            url: '<?= base_url('/playgame') ?>',
             method: 'post',
             data: formData,
             processData: false,
@@ -69,7 +69,7 @@
                         data
                     } = JSON.parse(response)
                     if (status === true) {
-                        window.location.replace(data.url);
+                        window.location.href = data.url
                     }
                 } catch (err) {
                     console.log(err);
@@ -77,7 +77,7 @@
                 }
             },
             error: function(err) {
-                swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Slot:81']) ?>')
+                swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Slot:80']) ?>')
             }
         })
 
