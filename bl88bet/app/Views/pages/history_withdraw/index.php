@@ -1,4 +1,4 @@
-<?= $this->extend('pages/user_templates/index'); ?>
+<?= $this->extend('layouts/user/index'); ?>
 
 <?= $this->section('content'); ?>
 

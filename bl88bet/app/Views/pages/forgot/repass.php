@@ -1,4 +1,4 @@
-<?= $this->extend('pages/web_templates/index'); ?>
+<?= $this->extend('layouts/web/index'); ?>
 
 <?= $this->section('content'); ?>
 

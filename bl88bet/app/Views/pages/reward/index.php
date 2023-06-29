@@ -3,7 +3,7 @@ $language = \Config\Services::language();
 $locale = $language->getLocale();
 ?>
 
-<?= $this->extend('pages/user_templates/index'); ?>
+<?= $this->extend('layouts/user/index'); ?>
 
 <?= $this->section('content'); ?>
 

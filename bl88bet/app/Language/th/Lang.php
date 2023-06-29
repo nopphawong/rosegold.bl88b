@@ -129,7 +129,7 @@ return [
         'lucky_wheel' => 'กงล้อ',
         'logout' => 'ออกจากระบบ',
         'confirm_logout' => 'ต้องการออกจากระบบหรือไม่?',
-        'refresh_btn' => 'ยอดเงินล่าสุด'
+        'refresh_btn' => 'เช็คยอดล่าสุด'
     ],
     'lucky_wheel' => [
         'lucky_wheel' => 'กงล้อนำโชค'

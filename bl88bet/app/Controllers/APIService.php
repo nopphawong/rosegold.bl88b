@@ -22,6 +22,7 @@ class APIService extends BaseController
             'm_webbalance',
             'm_weblistgame',
             'm_weblogin',
+            'm_uchangepass',
         ];
 
         if (in_array($path, $endpoints)) {

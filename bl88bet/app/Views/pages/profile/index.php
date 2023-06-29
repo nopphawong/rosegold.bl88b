@@ -5,7 +5,7 @@ use App\Libraries\CustomFormatter;
 $formatter = new CustomFormatter()
 ?>
 
-<?= $this->extend('pages/user_templates/index'); ?>
+<?= $this->extend('layouts/user/index'); ?>
 
 <?= $this->section('content'); ?>
 
