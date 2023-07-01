@@ -44,6 +44,19 @@ return [
     'casino' => [
         'casino' => 'Casino',
     ],
+    'change_password' => [
+        'change_password' => 'Change Password',
+        'current_password' => 'Current password',
+        'new_password' => 'New password',
+        'new_repassword' => 'New repassword',
+        'confirm' => 'Confirm',
+        'password_is_required' => 'Current password is required',
+        'new_password_is_required' => 'New password is required',
+        'password_is_min_length' => 'Password must be more than 6 characters',
+        'password_is_alpha_numeric' => 'Password must be letters and numbers only',
+        'repassword_is_matches' => 'Passwords do not match',
+        'change_pasword_error' => 'Something went wrong',
+    ],
     'coupon' => [
         'coupon' => 'Gift Voucher',
         'code' => 'Code',

@@ -41,7 +41,10 @@ $routes->match(['get', 'post'], '/casino', 'Casino::index', ['filter' => 'authGu
 $routes->match(['get', 'post'], '/slot', 'Slot::index', ['filter' => 'authGuard']);
 $routes->match(['get', 'post'], '/sport', 'Sport::index', ['filter' => 'authGuard']);
 
-$routes->get('/profile', 'Home::profilePage', ['filter' => 'authGuard']);
+$routes->match(['get', 'post'], '/profile', 'Profile::index', ['filter' => 'authGuard']);
+$routes->match(['get', 'post'], '/change-password', 'ChangePassword::index', ['filter' => 'authGuard']);
+$routes->post('/change-password/submit', 'ChangePassword::submit');
+
 $routes->get('/promotion', 'Home::promotionPage', ['filter' => 'authGuard']);
 $routes->get('/history-withdraw', 'Home::historyWithdrawPage', ['filter' => 'authGuard']);
 $routes->get('/reward', 'Home::rewardPage', ['filter' => 'authGuard']);

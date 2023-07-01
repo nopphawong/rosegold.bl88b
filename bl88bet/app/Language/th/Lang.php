@@ -44,6 +44,19 @@ return [
     'casino' => [
         'casino' => 'คาสิโน',
     ],
+    'change_password' => [
+        'change_password' => 'เปลี่ยนรหัสผ่านใหม่',
+        'current_password' => 'รหัสผ่านเดิม',
+        'new_password' => 'รหัสผ่านใหม่',
+        'new_repassword' => 'รหัสผ่านใหม่ อีกครั้ง',
+        'confirm' => 'ยืนยัน',
+        'password_is_required' => 'กรุณาระบุ รหัสผ่านเดิม',
+        'new_password_is_required' => 'กรุณาระบุ รหัสผ่านใหม่',
+        'password_is_min_length' => 'รหัสผ่านจะต้องมากกว่า 6 ตัวอักษร',
+        'password_is_alpha_numeric' => 'รหัสผ่านต้องเป็นตัวอักษรและตัวเลขเท่านั้น',
+        'repassword_is_matches' => 'กรุณาระบุรหัสผ่านให้ตรงกัน',
+        'change_pasword_error' => 'เกิดข้อผิดพลาดบางอย่าง',
+    ],
     'coupon' => [
         'coupon' => 'Gift Voucher',
         'code' => 'รหัสคูปอง',

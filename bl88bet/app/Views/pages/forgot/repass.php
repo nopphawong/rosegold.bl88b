@@ -93,8 +93,7 @@
                         try {
                             const {
                                 status,
-                                msg,
-                                data
+                                msg
                             } = JSON.parse(response)
                             if (status === true) {
                                 swalFlashAlert(msg)

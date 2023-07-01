@@ -53,11 +53,6 @@ class Home extends BaseController
         return  $this->cv->userView('pages/home/index', $this->headerInfo, $this->viewData);
     }
 
-    public function profilePage()
-    {
-        return  $this->cv->userView('pages/profile/index', $this->headerInfo);
-    }
-
     public function promotionPage()
     {
 

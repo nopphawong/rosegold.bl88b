@@ -47,20 +47,13 @@
 <div class="main-desktop desktop--">
 
     <div class="row">
-        <div class="col-md-3 text-center">
-
-        </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-12 text-center">
             <h3 class="text-rose-gold-shadow"><?= lang('Lang.withdraw.withdraw') ?></h3>
-        </div>
-        <div class="col-md-3 text-center">
-
         </div>
     </div>
 
-
-    <div class="row  padding-1">
-        <div class="col-md-12 ">
+    <div class="row padding-1">
+        <div class="col-md-12">
             <div class="card-bank-withdraw mg-at w-50">
                 <div class="row amount-pad">
                     <div class="col-md-12 text-left padding-bot-35px">
@@ -74,7 +67,7 @@
 
     </div>
     <div class="row padding-1">
-        <div class="col-md-12 ">
+        <div class="col-md-12">
             <div class="col-12 text-center">
                 <div class="card-bank-withdraw mg-at w-50">
                     <div class="media">
@@ -96,7 +89,7 @@
     </div>
     <div class="row justify-content-center padding-1">
         <div class="col-md-6 text-center">
-            <button type="button" class="btn btn-sm bg-white w-50 boder-half-gold text-black font-size-08 btn-confirm-wd"><?= lang('Lang.withdraw.confirm') ?></button>
+            <button type="button" class="btn btn-rose-gold w-50 text-black font-size-08"><?= lang('Lang.withdraw.confirm') ?></button>
         </div>
 
     </div>

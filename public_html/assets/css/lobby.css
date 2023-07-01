@@ -62,15 +62,15 @@
 }
 
 .mb-1 {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-2 {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-3 {
-  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .pb-3 {
@@ -2683,7 +2683,6 @@ fieldset select select:after {
 }
 
 button[type='submit'] {
-  font-family: DB HelvethaicaX, Arial, sans-serif;
   font-size: 24px;
   border: 0;
   display: block;
@@ -2945,8 +2944,8 @@ p {
   transform: translate(-50%, 50%);
 }
 .wallet__refresh_btn:hover {
-    color: #000;
-    box-shadow: 0px 0px 20px #e4dfb6ad;
+  color: #000;
+  box-shadow: 0px 0px 20px #e4dfb6ad;
 }
 
 @media screen and (max-width: 992px) {
@@ -4997,4 +4996,12 @@ input#fileslip {
 }
 .h-15 {
   height: 15%;
+}
+
+.form-group {
+  margin-bottom: 0.5rem !important;
+}
+
+#change_pass_form div:nth-child(3n + 1) {
+  margin-bottom: 1rem !important;
 }

@@ -63,25 +63,25 @@ $formatter = new CustomFormatter()
                     </div>
                 </div>
                 <div class="col-12 text-center">
-                    <button class="btn-rose-gold-deep-icon w-100 text-black font-size-07">
+                    <a href="<?= site_url('change-password') ?>" class="btn-rose-gold-deep-icon w-100 text-black font-size-07">
                         <img src="assets/images/misc/cpass.png">
                         <?= lang('Lang.profile.change_password') ?>
-                    </button>
+                    </a>
                 </div>
             </div>
 
         </div>
 
         <div class="col-12 text-center margin-top-10p">
-            <button class="btn-rose-gold-deep-icon w-60 text-black font-size-07">
+            <a href="<?= site_url('affiliate') ?>" class="btn-rose-gold-deep-icon w-60 text-black font-size-07">
                 <img src="assets/images/misc/invite.png"><?= lang('Lang.profile.affiliate') ?>
-            </button>
+            </a>
         </div>
 
         <div class="col-12 text-center margin-top-10p padding-top-10px">
-            <button class="btn-rose-gold-deep-icon w-60 text-black font-size-07">
+            <a target="_blank" href="http://line.me/ti/p/~@882yztsp" class="btn-rose-gold-deep-icon w-60 text-black font-size-07">
                 <img src="assets/images/misc/staff.png"><?= lang('Lang.profile.contact_us') ?>
-            </button>
+            </a>
         </div>
     </div>
 </div>
@@ -93,9 +93,7 @@ $formatter = new CustomFormatter()
         </div>
     </div>
     <div class="row">
-        <div class="col-3 text-center">
-        </div>
-        <div class="col-6 text-center ">
+        <div class="offset-3 col-6 text-center ">
             <div class="row">
                 <div class="col-sm-12 text-center bg-ln-rosegold">
                     <div class="card-bank-rose-gold w-100 margin-auto">
@@ -147,10 +145,10 @@ $formatter = new CustomFormatter()
                         <div class="row justify-content-center">
 
                             <div class="col-12 text-center">
-                                <button class="btn-rose-gold-deep-icon w-70 text-black font-size-07">
+                                <a href="<?= site_url('change-password') ?>" class="btn-rose-gold-deep-icon w-70 text-black font-size-07">
                                     <img src="assets/images/misc/cpass.png">
                                     <?= lang('Lang.profile.change_password') ?>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

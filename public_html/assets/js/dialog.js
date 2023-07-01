@@ -1,7 +1,8 @@
-const swalError = (buttonText = 'OK', title = '') => {
+const swalError = (buttonText = 'OK', title = '', text = '') => {
   Swal.fire({
     icon: 'error',
     title,
+    text,
     confirmButtonText: buttonText,
   })
 }
