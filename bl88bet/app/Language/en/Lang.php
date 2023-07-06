@@ -235,6 +235,8 @@ return [
         'amount' => 'Amount',
         'withdraw_table' => 'withdraw',
         'finished' => 'finished',
+        'amount_is_required' => 'Amount is required',
+        'amount_must_be_number' => 'Amount must be number only',
     ],
     'error' => [
         'back_btn' => 'Back',

@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Coupon extends BaseController
+class Coupon extends home
 {
     public function index()
     {

@@ -232,6 +232,8 @@ return [
         'amount' => 'จำนวนเงิน',
         'withdraw_table' => 'ถอน',
         'finished' => 'เสร็จสิ้น',
+        'amount_is_required' => 'กรุณาระบุ จำนวนเงินถอน',
+        'amount_must_be_number' => 'จำนวนเงิน จะต้องเป็นตัวเลขเท่านั้น',
     ],
     'error' => [
         'back_btn' => 'กลับ',

@@ -35,6 +35,7 @@ $routes->set404Override(function () {
 $routes->get('lang/{locale}', 'Language::index');
 $routes->get('/', 'Home::index', ['filter' => 'authGuard']);
 $routes->post('/playgame', 'Home::playgame', ['filter' => 'authGuard']);
+$routes->post('/screen', 'Home::setResolutionScreen', ['filter' => 'authGuard']);
 $routes->get('/refresh', 'Home::refreshCredit', ['filter' => 'authGuard']);
 
 $routes->match(['get', 'post'], '/casino', 'Casino::index', ['filter' => 'authGuard']);
@@ -51,7 +52,10 @@ $routes->get('/reward', 'Home::rewardPage', ['filter' => 'authGuard']);
 $routes->get('/logout', 'Home::logout', ['filter' => 'authGuard']);
 
 $routes->get('/deposit', 'Deposit::index', ['filter' => 'authGuard']);
-$routes->get('/withdraw', 'Withdraw::index', ['filter' => 'authGuard']);
+$routes->match(['get', 'post'], '/withdraw', 'Withdraw::index', ['filter' => 'authGuard']);
+$routes->post('/withdraw/submit', 'Withdraw::submit');
+
+
 $routes->get('/affiliate', 'Affiliate::index', ['filter' => 'authGuard']);
 $routes->get('/coupon', 'Coupon::index', ['filter' => 'authGuard']);
 $routes->get('/wheel', 'LuckyWheel::index', ['filter' => 'authGuard']);

@@ -1,0 +1,155 @@
+/* Custom Bootstarp */
+.container-fluid {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  margin-top: 7vw;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before,
+.btn-link,
+.btn-link.focus,
+.btn-link:focus,
+.btn-link:hover,
+.btn:hover,
+.card-link:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.close:hover,
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.list-group-item-action:focus,
+.list-group-item-action:hover,
+.nav-link:focus,
+.nav-link:hover,
+.navbar-brand:focus,
+.navbar-brand:hover,
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.page-link:hover,
+.popover,
+.tooltip,
+a,
+a.badge:focus,
+a.badge:hover,
+a:hover,
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-glow {
+  text-shadow: 0px 0px 6px #e4dfb6ad;
+}
+
+.text-05 {
+  font-size: 0.5rem !important;
+}
+
+.text-06 {
+  font-size: 0.6rem !important;
+}
+
+.text-07 {
+  font-size: 0.7rem !important;
+}
+
+.text-08 {
+  font-size: 0.8rem !important;
+}
+
+.text-09 {
+  font-size: 0.9rem !important;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.rosegold-btn {
+  border-radius: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(221, 95, 97, 1) 0%,
+    rgba(246, 181, 174, 1) 100%
+  );
+  border: none;
+  color: #000;
+  font-size: 20px;
+  height: 46px;
+}
+
+.rosegold-btn:hover {
+  box-shadow: 0px 0px 20px #e4dfb6ad;
+}
+
+.rosegold-border {
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(45deg, #3c1313 -5%, #ff9469 45%, #ff9469 50%) border-box;
+  border: 3px solid transparent !important;
+  border-radius: 40px;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 4vw;
+  top: 1vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .rosegold-border {
+    border-radius: 25px;
+    line-height: 6vw;
+    top: 0vh;
+  }
+}
+
+/* ------- Trigger Mobile Size ------- */
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: 4.5rem;
+  }
+
+  .rosegold-border {
+    border-radius: 25px;
+    width: 85vw;
+    font-size: 5.5rem;
+    line-height: 17vw;
+    top: 2vh;
+  }
+}

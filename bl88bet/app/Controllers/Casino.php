@@ -1,9 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
-use App\Controllers\Home;
-
+         
 class Casino extends Home
 {
     public function index()

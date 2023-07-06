@@ -2,34 +2,25 @@
 
 <?= $this->section('content'); ?>
 
-<div class="main mobile--">
-    <div class="row">
-        <?php if (isset($result) && isset($result->data)) : ?>
-            <?php foreach ($result->data as $obj) : ?>
-                <div class="col-12 col-md-12 text-center padding-2 col-banner">
-                    <a href="#" onclick="playgame(event, '<?= $obj->code ?>')">
-                        <img src="assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" data-original="assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
-                    </a>
-                </div>
-            <?php endforeach; ?>
-        <?php endif; ?>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <?php if (isset($result) && isset($result->data)) : ?>
+                <?php foreach ($result->data as $obj) : ?>
+                    <div class="col-12 col-md-3 p-1 text-center">
+                        <a href="#" onclick="playgame(event, '<?= $obj->code ?>')">
+                            <?php if (session()->screen_width < 768) : ?>
+                                <img src="assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" data-original="assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
+                            <?php else : ?>
+                                <img src="assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" data-original="assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
+                            <?php endif; ?>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
     </div>
-</div>
-
-<div class="container game-container desktop--">
-    <div class="row">
-        <?php if (isset($result) && isset($result->data)) : ?>
-            <?php foreach ($result->data as $obj) : ?>
-                <div class="col-md-3 col-md-3 padding-game text-center text-center padding-2 col-banner">
-                    <a href="#" onclick="playgame(event, '<?= $obj->code ?>')">
-                        <img src="assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" data-original="assets/images/sport/desktop<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
-                    </a>
-                </div>
-
-            <?php endforeach; ?>
-        <?php endif; ?>
-    </div>
-</div>
+</main>
 
 <?= $footer ?>
 

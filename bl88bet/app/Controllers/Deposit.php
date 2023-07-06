@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Deposit extends BaseController
+class Deposit extends Home
 {
     public function index()
     {

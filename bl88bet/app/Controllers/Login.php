@@ -28,7 +28,7 @@ class Login extends BaseController
                 $data = transformAuthData($result->data);
                 $ses_data = [
                     'data' => $data,
-                    'logged_in' => TRUE
+                    'logged_in' => TRUE,
                 ];
                 $this->session->set($ses_data);
             }

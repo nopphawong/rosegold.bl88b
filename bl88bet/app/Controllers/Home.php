@@ -35,6 +35,11 @@ class Home extends BaseController
         $result = json_decode($response);
         if ($result->status) {
             session()->set(['webbalance' => $result->data->webbalance]);
+        } else {
+            if ($result->msg == 'token หมดอายุ') {
+                session()->destroy();
+                return redirect()->to('/login');
+            }
         }
         // {
         //     "status": true,
@@ -88,6 +93,16 @@ class Home extends BaseController
         }
     }
 
+    public function setResolutionScreen()
+    {
+        if ($this->request->isAJAX()) {
+            session()->set([
+                'screen_width' => $this->request->getVar('width'),
+                'screen_height' => $this->request->getVar('height'),
+            ]);
+        }
+    }
+
     public function playgame()
     {
         if ($this->request->isAJAX()) {
@@ -108,6 +123,6 @@ class Home extends BaseController
 
     public function logout()
     {
-        $this->session->destroy();
+        session()->destroy();
     }
 }

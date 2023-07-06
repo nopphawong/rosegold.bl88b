@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-
 class APIService extends BaseController
 {
 
@@ -23,6 +21,7 @@ class APIService extends BaseController
             'm_weblistgame',
             'm_weblogin',
             'm_uchangepass',
+            'm_uwithdraw',
         ];
 
         if (in_array($path, $endpoints)) {

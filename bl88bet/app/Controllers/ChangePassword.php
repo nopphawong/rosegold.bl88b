@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Controllers\Home;
-
 class ChangePassword extends Home
 {
     public function index()

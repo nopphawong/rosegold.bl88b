@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Controllers\Home;
-
 class Sport extends Home
 {
     public function index()

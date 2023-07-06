@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Controllers\Home;
-
 class Slot extends Home
 {
     public function index()

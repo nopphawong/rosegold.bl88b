@@ -7,16 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($title) ?></title>
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <!-- Bootstrap 4 -->
-    <?= link_tag('assets/css/bootstrap.min.css') ?>
+
+    <?php
+    $uri = \Config\Services::uri();
+    $request = \Config\Services::request();
+    ?>
+    <?php if (trim($uri->getPath()) != '/') : ?>
+        <?php print_r(trim($uri->getPath())) ?>
+        <!-- Bootstrap 4 -->
+        <?= link_tag('assets/css/bootstrap.min.css') ?>
+        <!-- Common CSS -->
+        <?= link_tag('assets/css/common.css?v=1.0.7') ?>
+        <!-- Desktop CSS -->
+        <?= link_tag('assets/css/desktop_common.css') ?>
+        <!-- Lobby CSS -->
+        <?= link_tag('assets/css/lobby.css?v=1.1.5') ?>
+    <?php endif; ?>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom Bootrap -->
+    <?= link_tag('assets/css/bs_modify.css?v=1.0.0') ?>
+    <!-- Rose Gold CSS -->
+    <?= link_tag('assets/css/rosegold.css?v=1.0.1') ?>
     <!-- All CSS -->
     <?= link_tag('assets/css/all.min.css') ?>
-    <!-- Common CSS -->
-    <?= link_tag('assets/css/common.css?v=1.0.6') ?>
-    <!-- Desktop CSS -->
-    <?= link_tag('assets/css/desktop_common.css') ?>
-    <!-- Lobby CSS -->
-    <?= link_tag('assets/css/lobby.css?v=1.1.5') ?>
+
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <!-- Google font -->
