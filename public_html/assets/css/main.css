@@ -722,7 +722,6 @@ a:hover {
     #ffecb3 40%,
     #ffb41a 78%
   );
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   text-transform: uppercase;
