@@ -26,7 +26,7 @@
         <div class="copy-link">
             <div class="copy-link-inner">
                 <div id="cp_link" class="text-center text-07">https://reg2bl.com/DoLHf</div>
-                <a onclick="copyClipboard(cp_link)"><i class="fa fa-copy fa-xs"></i></a>
+                <a onclick="copyClipboard('cp_link')"><i class="fa fa-copy fa-xs"></i></a>
             </div>
         </div>
 

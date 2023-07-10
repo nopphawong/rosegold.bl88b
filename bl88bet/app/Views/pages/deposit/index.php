@@ -23,13 +23,14 @@ $formatter = new CustomFormatter()
                                 </div>
                                 <div class="col-8">
                                     <div class="deposit-account">
+                                        <div id="deposit_ac" class="d-none">0000000001</div>
                                         <p><?= lang('Lang.deposit.bank_account_number', [$formatter->bank_ac_no_format('0000000000')]) ?></p>
                                         <p><?= lang('Lang.deposit.bank_name', [$formatter->bank_format('SCB')]) ?></p>
                                         <p><?= lang('Lang.deposit.name', ['ณัฏฐ์พัชร ธนภัทรไพบูล']) ?></p>
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn rosegold-dark-btn w-75 m-auto">
+                            <button class="btn rosegold-dark-btn w-75 m-auto" onclick="copyClipboard(deposit_ac)">
                                 <img src="assets/images/misc/copy.png">
                                 <?= lang('Lang.deposit.copy') ?>
                             </button>
