@@ -9,99 +9,18 @@ $formatter = new CustomFormatter()
 
 <?= $this->section('content'); ?>
 
-<div class="main mobile--">
-    <div class="responsive">
-        <div class="col-12">
-            <h5 class="text-center text-white"><?= lang('Lang.profile.profile') ?></h5>
-        </div>
-
-        <div class="col-12 text-center pad-lr-0 bg-ln-rosegold">
-            <div class="card-bank-rose-gold padding-7">
-                <div class="row line-h-1_6 ">
-                    <div class="col-4 text-center">
-                        <img src="assets/images/scb.png" class="img-bank">
-                    </div>
-                    <div class="col-8 text-left bank-profile-acc">
-                        <p class="font-size-06"><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
-                        <p class="font-size-06"><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
-                        <p class="font-size-06"><?= lang('Lang.profile.username', [session()->data->name]) ?></p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-12 text-center margin-top-3p pad-lr-0 bg-ln-rosegold">
-            <div class="card-bank-rose-gold pad-t-0 padding-7">
-                <div class="row line-h-1_6 profile-detail">
-
-                    <div class="col-5 text-left padding-5  font-size-3vw pad-right-0">
-                        <p class="text-rose-gold"><?= lang('Lang.profile.phone_number') ?> :</p>
-                        <p class="text-rose-gold"><?= lang('Lang.profile.password') ?> :</p>
-                        <p class="text-rose-gold"><?= lang('Lang.profile.line_id') ?> :</p>
-                        <p class="text-rose-gold"><?= lang('Lang.profile.register_on') ?> :</p>
-                        <p class="text-rose-gold"><?= lang('Lang.profile.last_login') ?> :</p>
-                    </div>
-                    <div class="col-6 text-left padding-5 font-size-3vw">
-                        <p class="">091-854-6490</p>
-                        <p class="">xxxxx</p>
-                        <p class="">-</p>
-                        <p class="">06/07/2022 11:11 น.</p>
-                        <p class="">09/07/2022 12:12 น.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center display-flex w-100 margin-auto">
-                    <div class="display-flex">
-                        <label class="radio-circle"><?= lang('Lang.profile.get_bonus') ?>
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        &nbsp; &nbsp;
-                        <label class="radio-circle"><?= lang('Lang.profile.no_bonus') ?>
-                            <input type="radio" name="radio" checked="">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12 text-center">
-                    <a href="<?= site_url('change-password') ?>" class="btn-rose-gold-deep-icon w-100 text-black font-size-07">
-                        <img src="assets/images/misc/cpass.png">
-                        <?= lang('Lang.profile.change_password') ?>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-12 text-center margin-top-10p">
-            <a href="<?= site_url('affiliate') ?>" class="btn-rose-gold-deep-icon w-60 text-black font-size-07">
-                <img src="assets/images/misc/invite.png"><?= lang('Lang.profile.affiliate') ?>
-            </a>
-        </div>
-
-        <div class="col-12 text-center margin-top-10p padding-top-10px">
-            <a target="_blank" href="http://line.me/ti/p/~@882yztsp" class="btn-rose-gold-deep-icon w-60 text-black font-size-07">
-                <img src="assets/images/misc/staff.png"><?= lang('Lang.profile.contact_us') ?>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="container container-desktop desktop--">
-    <div class="row">
-        <div class="col-sm-12 text-center">
-            <h1 class="text-rose-gold-shadow"><?= lang('Lang.profile.profile') ?></h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="offset-3 col-6 text-center ">
-            <div class="row">
-                <div class="col-sm-12 text-center bg-ln-rosegold">
-                    <div class="card-bank-rose-gold w-100 margin-auto">
-                        <div class="row font-size-3vw">
-                            <div class="col-sm-4 text-right ">
-                                <img src="assets/images/scb.png" class="img-bank">
-                            </div>
-                            <div class="col-sm-8 text-left pad-left-0 bank-profile-acc">
+<main>
+    <div class="container pb-5 px-md-5">
+        <h4 class="text-while text-center mt-2"><?= lang('Lang.profile.profile') ?></h4>
+        <div class="card-dark p-2 p-md-3 mb-5">
+            <div class="rosegold-block mb-4">
+                <div class="rosegold-block-inner">
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <img src="assets/images/misc/scb.png" class="bank-image">
+                        </div>
+                        <div class="col-8">
+                            <div class="blog-detail text-shrink">
                                 <p><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
                                 <p><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
                                 <p><?= lang('Lang.profile.username', [session()->data->name]) ?></p>
@@ -109,63 +28,50 @@ $formatter = new CustomFormatter()
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 text-center margin-top-10 bg-ln-rosegold">
-                    <div class="card-bank-rose-gold w-100 margin-auto">
-                        <div class="row">
-
-                            <div class="col-md-5 text-left padding-5">
-                                <p class="text-rose-gold"><?= lang('Lang.profile.phone_number') ?> :</p>
-                                <p class="text-rose-gold"><?= lang('Lang.profile.password') ?> :</p>
-                                <p class="text-rose-gold"><?= lang('Lang.profile.line_id') ?> :</p>
-                                <p class="text-rose-gold"><?= lang('Lang.profile.register_on') ?> :</p>
-                                <p class="text-rose-gold"><?= lang('Lang.profile.last_login') ?> :</p>
+            </div>
+            <div class="rosegold-block">
+                <div class="rosegold-block-inner">
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <div class="blog-detail text-shrink">
+                                <p class="text-rosegold"><?= lang('Lang.profile.phone_number') ?> :</p>
+                                <p class="text-rosegold"><?= lang('Lang.profile.password') ?> :</p>
+                                <p class="text-rosegold"><?= lang('Lang.profile.line_id') ?> :</p>
+                                <p class="text-rosegold"><?= lang('Lang.profile.register_on') ?> :</p>
+                                <p class="text-rosegold"><?= lang('Lang.profile.last_login') ?> :</p>
                             </div>
-                            <div class="col-md-7 text-left padding-5">
-                                <p class="">091-854-6490</p>
-                                <p class="">xxxxx</p>
-                                <p class="">0999999992</p>
-                                <p class="">06/07/2022 00:05:46 น.</p>
-                                <p class="">09/07/2022 09:43:48 น.</p>
+                        </div>
+                        <div class="col-7">
+                            <div class="blog-detail text-shrink">
+                                <p>091-854-6490</p>
+                                <p>xxxxx</p>
+                                <p>0999999992</p>
+                                <p>06/07/2022 00:05:46 น.</p>
+                                <p>09/07/2022 09:43:48 น.</p>
                             </div>
 
                         </div>
-                        <div class="row justify-content-center display-flex w-100 margin-auto">
-                            <div class="display-flex">
-                                <label class="radio-circle"><?= lang('Lang.profile.get_bonus') ?>
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                &nbsp; &nbsp;
-                                <label class="radio-circle"><?= lang('Lang.profile.no_bonus') ?>
-                                    <input type="radio" name="radio" checked="">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-
-                            <div class="col-12 text-center">
-                                <a href="<?= site_url('change-password') ?>" class="btn-rose-gold-deep-icon w-70 text-black font-size-07">
-                                    <img src="assets/images/misc/cpass.png">
-                                    <?= lang('Lang.profile.change_password') ?>
-                                </a>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <label class="rosegold-radio"><?= lang('Lang.profile.get_bonus') ?> <input type="radio" name="radio" checked>
+                            <span class="rosegold-checkmark"></span>
+                        </label>
+                        &nbsp; &nbsp;
+                        <label class="rosegold-radio"><?= lang('Lang.profile.no_bonus') ?> <input type="radio" name="radio">
+                            <span class="rosegold-checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="<?= site_url('change-password') ?>" class="btn rosegold-dark-btn w-75">
+                            <img src="assets/images/misc/cpass.png">
+                            <?= lang('Lang.profile.change_password') ?> </a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 text-center padding-1">
-                </div>
-                <div class="col-sm-12 text-center padding-1">
-                </div>
-            </div>
         </div>
-        <div class="col-3 text-center">
-        </div>
-    </div>
-</div>
 
+    </div>
+</main>
 
 <?= $footer ?>
 

@@ -2,7 +2,17 @@
 .container-fluid {
   padding-right: 2.5rem;
   padding-left: 2.5rem;
-  margin-top: 7vw;
+  padding-top: 4vw;
+}
+
+.container {
+  padding-top: 8vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before,
@@ -66,6 +76,22 @@ a:hover {
   text-shadow: 0px 0px 6px #e4dfb6ad;
 }
 
+.text-01 {
+  font-size: 0.1rem !important;
+}
+
+.text-02 {
+  font-size: 0.2rem !important;
+}
+
+.text-03 {
+  font-size: 0.3rem !important;
+}
+
+.text-04 {
+  font-size: 0.4rem !important;
+}
+
 .text-05 {
   font-size: 0.5rem !important;
 }
@@ -86,55 +112,87 @@ a:hover {
   font-size: 0.9rem !important;
 }
 
+.text-09 {
+  font-size: 0.9rem !important;
+}
+
+.text-10 {
+  font-size: 1rem !important;
+}
+
+.text-11 {
+  font-size: 1.1rem !important;
+}
+
+.text-12 {
+  font-size: 1.2rem !important;
+}
+
+.text-13 {
+  font-size: 1.3rem !important;
+}
+
+.text-14 {
+  font-size: 1.4rem !important;
+}
+
+.text-15 {
+  font-size: 1.5rem !important;
+}
+
+.text-shrink {
+  font-size: 1rem;
+}
+
 .w-10 {
   width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
 }
 
 .w-35 {
   width: 35% !important;
 }
 
+.w-70 {
+  width: 70% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
 .w-90 {
   width: 90% !important;
 }
 
-.rosegold-btn {
-  border-radius: 20px;
-  background: linear-gradient(
-    0deg,
-    rgba(221, 95, 97, 1) 0%,
-    rgba(246, 181, 174, 1) 100%
-  );
-  border: none;
-  color: #000;
-  font-size: 20px;
-  height: 46px;
+.btn-md {
+  height: 60px;
 }
 
-.rosegold-btn:hover {
-  box-shadow: 0px 0px 20px #e4dfb6ad;
+input[type='radio'] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
 }
 
-.rosegold-border {
-  background: linear-gradient(#ffffff, #ffffff) padding-box,
-    linear-gradient(45deg, #3c1313 -5%, #ff9469 45%, #ff9469 50%) border-box;
-  border: 3px solid transparent !important;
-  border-radius: 40px;
-  position: relative;
-  width: 70%;
-  margin: auto;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 4vw;
-  top: 1vh;
+.visible-md {
+  display: block;
 }
 
-@media screen and (max-width: 1200px) {
-  .rosegold-border {
-    border-radius: 25px;
-    line-height: 6vw;
-    top: 0vh;
-  }
+.invisible-md {
+  display: none;
+}
+
+.bg-success {
+  background: #009345 !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
 }
 
 /* ------- Trigger Mobile Size ------- */
@@ -142,14 +200,26 @@ a:hover {
   .container-fluid {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    margin-top: 4.5rem;
+    padding-top: 4.5rem;
   }
 
-  .rosegold-border {
-    border-radius: 25px;
-    width: 85vw;
-    font-size: 5.5rem;
-    line-height: 17vw;
-    top: 2vh;
+  .container {
+    padding-top: 4.5rem;
+  }
+
+  .text-shrink {
+    font-size: 3.5vw;
+  }
+
+  .visible-md {
+    display: none;
+  }
+
+  .invisible-md {
+    display: block;
+  }
+
+  .btn-md {
+    height: initial;
   }
 }

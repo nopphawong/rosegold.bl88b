@@ -48,7 +48,7 @@
 <!-- Loader JS -->
 <?= script_tag('assets/js/loader.js') ?>
 <!-- Utility JS -->
-<?= script_tag('assets/js/util.js') ?>
+<?= script_tag('assets/js/util.js?v=1.1.1') ?>
 
 <script>
     $("img.lazy").lazyload();

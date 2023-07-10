@@ -33,12 +33,12 @@ $formatter = new CustomFormatter()
                                 <div class="wallet-total-credit">
                                     <span class=""><?= lang('Lang.home.credit_balance') ?></span>
                                     <?php if (isset($result) && isset($result->status) && $result->status == 1) : ?>
-                                        <p id="d_credit" class="member-credit">฿0.00</p>
+                                        <p id="d_credit" class="member-credit"><?= number_to_currency(1000.00, 'THB', 'th', 2); ?></p>
                                     <?php else : ?>
                                         <p id="d_credit" class="member-credit">???</p>
                                     <?php endif; ?>
                                 </div>
-                                <button onclick="refreshCredit()" class="btn rosegold-btn wallet-btn"><?= lang('Lang.home.refresh_btn') ?></button>
+                                <button onclick="refreshCredit()" class="btn rosegold-light-btn wallet-btn"><?= lang('Lang.home.refresh_btn') ?></button>
                                 <div class="wallet-turnover-container">
                                     <div class="wallet-datetime">
                                         <img src="assets/images/misc/calendar.png" class="w-10">
@@ -48,7 +48,7 @@ $formatter = new CustomFormatter()
                                     </div>
                                 </div>
                                 <div class="wallet-turnover-container">
-                                    <div class="rosegold-border text-black">
+                                    <div class="rosegold-border inner w-responsive text-black">
                                         <p class="text-07"><?= lang('Lang.home.turnover') ?> <span class="text-09"><?= number_format(1200.00, 2) ?>/</span><?= number_format(80.00, 2) ?></p>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@ $formatter = new CustomFormatter()
                             <a href="<?= site_url('withdraw') ?>" class="btn menu-btn">
                                 <img src="assets/images/button/wd.png">
                             </a>
-                            <a href="<?= site_url('history-withdraw') ?>" class="btn menu-btn">
+                            <a href="<?= site_url('transactions-history') ?>" class="btn menu-btn">
                                 <img src="assets/images/button/tx.png">
                             </a>
                             <a href="<?= site_url('promotion') ?>" class="btn menu-btn">
@@ -139,12 +139,12 @@ $formatter = new CustomFormatter()
                                         </div>
                                     </div>
                                 </a>
-                                <a class="menu-mobile-item-group" href="<?= site_url('history-withdraw') ?>">
+                                <a class="menu-mobile-item-group" href="<?= site_url('transactions-history') ?>">
                                     <div class="menu-item-inner-group">
                                         <div class="menu-item-icon-group">
                                             <div class="menu-item-content-group">
                                                 <img src="assets/images/button/txhis.png">
-                                                <span class="text-05"><?= lang('Lang.home.history_withdraw') ?></span>
+                                                <span class="text-05"><?= lang('Lang.home.transactions_history') ?></span>
                                             </div>
                                         </div>
                                     </div>

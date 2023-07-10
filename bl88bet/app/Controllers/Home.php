@@ -64,11 +64,6 @@ class Home extends BaseController
         return  $this->cv->userView('pages/promotion/index', $this->headerInfo);
     }
 
-    public function historyWithdrawPage()
-    {
-        return  $this->cv->userView('pages/history_withdraw/index', $this->headerInfo);
-    }
-
     public function rewardPage()
     {
         return  $this->cv->userView('pages/reward/index', $this->headerInfo);

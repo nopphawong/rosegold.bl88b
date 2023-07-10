@@ -47,7 +47,7 @@ $routes->match(['get', 'post'], '/change-password', 'ChangePassword::index', ['f
 $routes->post('/change-password/submit', 'ChangePassword::submit');
 
 $routes->get('/promotion', 'Home::promotionPage', ['filter' => 'authGuard']);
-$routes->get('/history-withdraw', 'Home::historyWithdrawPage', ['filter' => 'authGuard']);
+$routes->get('/transactions-history', 'Transactions::index', ['filter' => 'authGuard']);
 $routes->get('/reward', 'Home::rewardPage', ['filter' => 'authGuard']);
 $routes->get('/logout', 'Home::logout', ['filter' => 'authGuard']);
 

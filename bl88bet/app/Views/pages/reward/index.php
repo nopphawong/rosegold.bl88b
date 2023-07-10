@@ -14,232 +14,79 @@ $locale = $language->getLocale();
 // } 
 ?>
 
-<div class="main mobile--">
-
-    <div class="col-md-12">
-        <div class="">
-            <div class="row">
-                <div class="col-md-3 text-center">
-
-                </div>
-                <div class="col-md-6 text-center">
-                    <h3 class="text-rose-gold-shadow"><?= lang('Lang.reward.reward') ?></h3>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="col-12 bg-reward-point">
-                        200
-                    </div>
-
-                </div>
+<main>
+    <div class="container pb-5">
+        <h4 class="text-center"><?= lang('Lang.reward.reward') ?></h4>
+        <div class="d-flex justify-content-center justify-content-md-end">
+            <div class="reward-point-wrapper mb-3">
+                <div class="reward-point"><?= number_format(50.00, 0) ?></div>
             </div>
-
-            <div class="row">
-                <div class="col-md-4 col-6 text-center padding-2 ">
-                    <div class="card-reward">
-                        <div class="row pad-lr-0">
-                            <div class="col-12 text-center pad-lr-0">
-                                <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                                <img class="padding-03" src="assets/images/rewards/100.png" width="90vw">
-                            </div>
-                        </div>
-                        <div class="row padding-03 text-center ">
-                            <div class="col-12 text-center pad-lr-0">
-                                <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                                <button class=" btn-rose-gold-1-sq bold font-size-4vw w-50 text-black" onclick="redeem(5)"><?= lang('Lang.reward.get_reward') ?></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6 text-center padding-2 ">
-                    <div class="card-reward">
-                        <div class="row pad-lr-0">
-                            <div class="col-12 text-center pad-lr-0">
-                                <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                                <img class="padding-03" src="assets/images/rewards/100.png" width="90vw">
-                            </div>
-                        </div>
-                        <div class="row padding-03 text-center ">
-                            <div class="col-12 text-center pad-lr-0">
-                                <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                                <button class=" btn-rose-gold-1-sq bold font-size-4vw w-50 text-black" onclick="redeem(5)"><?= lang('Lang.reward.get_reward') ?></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
 
-</div>
-
-<div class="container container-desktop desktop--">
-
-    <div class="col-md-12">
         <div class="row">
-            <div class="col-md-3 text-center">
-
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card-dark text-center p-1 p-md-3">
+                    <div class="reward-content">
+                        <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
+                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
+                    </div>
+                    <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
+                </div>
             </div>
-            <div class="col-md-6 text-center">
-                <h3 class="text-rose-gold-soft-shadow"><?= lang('Lang.reward.reward') ?></h3>
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card-dark text-center p-1 p-md-3">
+                    <div class="reward-content">
+                        <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
+                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
+                    </div>
+                    <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
+                </div>
             </div>
-            <div class="col-md-3 text-center ">
-                <div class="col-12 bg-reward-point">
-                    200
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card-dark text-center p-1 p-md-3">
+                    <div class="reward-content">
+                        <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
+                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
+                    </div>
+                    <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card-dark text-center p-1 p-md-3">
+                    <div class="reward-content">
+                        <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
+                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
+                    </div>
+                    <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card-dark text-center p-1 p-md-3">
+                    <div class="reward-content">
+                        <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
+                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
+                    </div>
+                    <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
+                </div>
+            </div>
+            <div class="col-6 col-lg-4 mb-3">
+                <div class="card-dark text-center p-1 p-md-3">
+                    <div class="reward-content">
+                        <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
+                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
+                    </div>
+                    <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
                 </div>
             </div>
         </div>
-
-
-        <div class="row reward-desktop">
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 text-center padding-2">
-                <div class="card-reward">
-                    <div class="row">
-                        <div class="col-12 text-center ">
-                            <p class="text-glow "><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                            <img class="padding-03" src="assets/images/rewards/100.png" width="">
-                        </div>
-                    </div>
-                    <div class="row padding-03 text-center ">
-                        <div class="col-12 text-center">
-                            <p class=""><?= lang('Lang.reward.redeem_points', [100]) ?></p>
-                        </div>
-                        <div class="col-12 text-center padding-2-rem">
-                            <button class=" btn-rose-gold-1-sq  font-size-1_3vw line-h-2 bold  w-100 text-black"><?= lang('Lang.reward.get_reward') ?></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-</div>
+</main>
 
 <?= $footer ?>
 

@@ -34,6 +34,16 @@ html {
   flex-direction: column;
 }
 
+/* Custom toastr */
+.toast-top-right {
+  top: unset !important;
+  bottom: 12px !important;
+}
+
+.toast-message {
+  font-size: 14px;
+}
+
 /* ------- Open Desktop Navigation ------- */
 .navbar-roseglod {
   position: fixed;
@@ -582,6 +592,533 @@ html {
 }
 /* ------- Close Home ------- */
 
+/* ------- Open Deposit ------- */
+.deposit-account {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.blog-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+/* ------- Close Deposit ------- */
+
+/* ------- Open History Widthdraw ------- */
+.transaction-block {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 0.6rem;
+}
+
+.transaction-block.deposit {
+  background: linear-gradient(#080d33, #080d33) padding-box,
+    linear-gradient(45deg, black, #c8b465) border-box;
+}
+
+.transaction-block.withdraw {
+  background: linear-gradient(#95969b, #95969b) padding-box,
+    linear-gradient(45deg, transparent, #c8b465) border-box;
+}
+
+.transaction-status {
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding: 0 14px;
+  text-align: center;
+  width: 135px;
+}
+/* ------- Close History Widthdraw ------- */
+
+/* ------- Open Promotion ------- */
+.get-promotion-btn {
+  background: linear-gradient(to right, #ffa994 0%, #ffc3b3 50%, #ffa994 100%);
+  border-radius: 5px;
+  border: 0px solid #ced4da;
+  text-align: center;
+  font-size: 0.7rem;
+  color: white;
+}
+/* ------- Close Promotion ------- */
+
+/* ------- Open Affiliate ------- */
+.rosegold-light-border {
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background: linear-gradient(#f7fbff, #002c67) padding-box,
+    linear-gradient(to right, #efaaa4 0%, #ce6867 46%, rgb(229 113 172) 100%)
+      border-box;
+}
+
+.rosegold-qr-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.download-qr-btn {
+  background: #4a2d2f;
+  font-size: 1vw;
+  border: 1px solid #784930;
+  border-radius: 25px;
+  width: 100%;
+  margin: auto;
+  color: #d7733d;
+  line-height: 3;
+  letter-spacing: 0px;
+  display: block;
+}
+
+.text-code {
+  font-size: calc(15px + 0.25vw);
+}
+
+.copy-link {
+  max-width: 50%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background: linear-gradient(252deg, #4a4949 0%, #1a1a1a 50%, #171717 100%)
+      padding-box,
+    linear-gradient(to right, #efaaa4 0%, #ce6867 46%, rgb(229 113 172) 100%)
+      border-box;
+  padding: 0 0.5rem;
+}
+
+.copy-link-inner {
+  display: flex;
+  align-items: center;
+}
+
+.copy-link-inner div:first-child {
+  flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.copy-link-inner a {
+  cursor: pointer;
+}
+
+.social-wrapper {
+  max-width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.social-wrapper a img {
+  width: 80%;
+}
+
+.rosegold-tabs-warpper {
+  max-width: 50%;
+  margin: 1rem auto;
+  border-radius: 25px 25px 10px 10px;
+  border: 3px solid transparent;
+  background: linear-gradient(252deg, #4a4949 0%, #1a1a1a 50%, #171717 100%)
+      padding-box,
+    linear-gradient(to right, #efaaa4 0%, #ce6867 46%, rgb(229 113 172) 100%)
+      border-box;
+}
+
+.rosegold-tabs-warpper .nav-tabs {
+  border-bottom: 3px solid #dee2e6;
+}
+
+.rosegold-tabs-warpper .nav.nav-tabs .nav-item {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-link {
+  border: none;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-item a.nav-link.active {
+  color: #fff;
+  background: linear-gradient(
+      to right,
+      #efaaa4 0%,
+      #ce6867 46%,
+      rgb(229 113 172) 100%
+    )
+    border-box;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-item:first-child a.nav-link.active {
+  border-radius: 19px 0 0;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-item:last-child a.nav-link.active {
+  border-radius: 0 19px 0 0;
+}
+
+.tab-pane {
+  padding: 15px;
+}
+
+/* ------- Close Affiliate ------- */
+
+/* ------- Open Reward ------- */
+.reward-point-wrapper {
+  width: 200px;
+  text-align: center;
+}
+
+.reward-point {
+  background: url(../images/rewards/iconRwTx_.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px;
+}
+
+.reward-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reward-content img {
+  width: 50%;
+  max-width: 120px;
+}
+/* ------- Close Reward ------- */
+
+/* ------- Open Gift Voucher ------- */
+.gift-voucher-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.gift-voucher-content img {
+  width: 40%;
+}
+
+.gift-voucher-content button {
+  height: 55px;
+  width: 36%;
+  border-radius: 15px;
+}
+/* ------- Close Gift Voucher ------- */
+
+/* ------- Open Lucky Wheel ------- */
+.lucky-wheel-content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  position: relative;
+}
+
+.lucky-wheel-content img:first-child {
+  width: 50%;
+  z-index: 9;
+}
+
+.spintext {
+  position: absolute;
+  width: 280px;
+  top: -0.5rem;
+  left: 20px;
+}
+
+.redeemtext {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  right: 0;
+}
+
+.lucky-wheel-content .block-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 4px solid #e01db9;
+  border-radius: 10px;
+  background: linear-gradient(339deg, #4a4949 0%, #1a1a1a 50%, #171717 100%);
+  box-shadow: 0px 0px 6px #f77afd;
+  width: 35%;
+}
+
+.lucky-wheel-content .block-content > p {
+  margin: 0.3rem;
+}
+
+.lucky-wheel-content .block-content > div {
+  border-top: 4px solid #e01db9;
+}
+
+.lucky-wheel-content .block-content > div > div {
+  padding: 0.3rem;
+}
+
+.lucky-wheel-content .block-content > div > div:first-child {
+  border-right: 4px solid #e01db9;
+}
+
+.lucky-wheel-content .block-content > div > div img {
+  width: 40px;
+}
+/* ------- Close Lucky Wheel ------- */
+
+/* ------- Open Change Password ------- */
+.change-password-content {
+  max-width: 450px;
+}
+.change-password-content label {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  margin-bottom: 0;
+}
+
+.change-password-content input {
+  font-size: 0.8rem;
+}
+/* ------- Close Change Password ------- */
+
+/* ------- Open Global ------- */
+.text-rosegold {
+  color: #fc9f83 !important;
+}
+
+.text-secondary {
+  color: #fcf7c1 !important;
+}
+
+.rosegold-light-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: linear-gradient(
+    0deg,
+    rgba(221, 95, 97, 1) 0%,
+    rgba(246, 181, 174, 1) 100%
+  );
+  border-width: 0px;
+  color: black;
+  font-size: 20px;
+  height: 46px;
+}
+
+.rosegold-light-btn:hover {
+  box-shadow: 0px 0px 20px #e4dfb6ad;
+}
+
+.rosegold-dark-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #e06360 10%, #c84d4b 30%, #b23739 60%);
+  border-width: 0px;
+  color: black;
+  font-size: 18px;
+}
+
+.rosegold-dark-btn:hover {
+  box-shadow: 0px 0px 10px #e6b196ad;
+}
+
+.rosegold-dark-btn img {
+  width: 1rem;
+}
+
+.rosegold-border {
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(45deg, #3c1313 -5%, #ff9469 45%, #ff9469 50%) border-box;
+  border: 3px solid transparent;
+  border-radius: 40px;
+}
+
+.rosegold-border.inner {
+  position: relative;
+  margin: auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 4vw;
+  top: 1vh;
+}
+
+.rosegold-border.inner.w-responsive {
+  width: 70%;
+}
+
+.card-dark {
+  width: 100%;
+  background: #00000088;
+  border-radius: 15px;
+}
+
+.rosegold-block {
+  background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(79deg, #b83f42, #d6908b) border-box;
+  border-radius: 12px;
+  padding: 0.15rem;
+}
+
+.rosegold-block-inner {
+  background: linear-gradient(339deg, #4a4949 0%, #1a1a1a 50%, #171717 100%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.rosegold-block-inner hr {
+  border-top: 1px solid #e57977;
+}
+
+.bank-image {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.rosegold-radio {
+  display: block;
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  user-select: none;
+  text-align: left;
+}
+
+.rosegold-radio input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rosegold-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #ff8f7d;
+  border: 1px solid #ff8f7d;
+  border-radius: 50%;
+}
+
+.rosegold-radio input:checked ~ .rosegold-checkmark:after {
+  display: block;
+}
+
+.rosegold-radio .rosegold-checkmark:after {
+  top: 0.2rem;
+  left: 0.2rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: black;
+}
+
+.rosegold-checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.rosegold-block-table {
+  background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(79deg, #b83f42, #d6908b) border-box;
+  border-radius: 28px;
+  padding: 0.2rem;
+}
+
+.rosegold-table {
+  border-radius: 25px;
+  border-spacing: unset;
+  border-collapse: collapse;
+  color: white;
+  background: linear-gradient(339deg, #4a4949 0%, #1a1a1a 50%, #171717 100%);
+  margin-bottom: 0 !important;
+}
+
+.rosegold-table thead tr th {
+  border-top: 0;
+  border-bottom: 2px solid;
+  line-height: 1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.rosegold-table tbody tr td {
+  padding: 0.5rem;
+}
+
+.rosegold-input {
+  background-color: #373538;
+  border-radius: 14px;
+  border: 2px solid #daa89f;
+  color: white;
+  position: relative;
+  width: 100%;
+  padding: 2%;
+}
+
+.rosegold-circle {
+  background: linear-gradient(252deg, #4a4949 0%, #1a1a1a 50%, #171717 100%);
+  padding: 2vw;
+  border: 10px solid #ffb9ae;
+  width: 23vw;
+  height: 23vw;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 35px #ffb9ae;
+  min-width: 250px;
+  min-height: 250px;
+}
+
+.rosegold-border-input {
+  background-color: #4a2d2f;
+  border-radius: 14px;
+  border: 2px solid #976250;
+  color: white;
+  position: relative;
+  padding: 1%;
+}
+
+.help-block {
+  font-size: 0.7rem !important;
+  color: red;
+}
+/* ------- Close Global ------- */
+
+@media screen and (max-width: 1200px) {
+  .rosegold-border {
+    border-radius: 25px;
+  }
+
+  .rosegold-border.inner {
+    line-height: 6vw;
+    top: 0vh;
+  }
+}
+
 /* ------- Trigger Mobile Size ------- */
 @media only screen and (max-width: 767px) {
   .navbar-roseglod {
@@ -639,4 +1176,107 @@ html {
     top: 14%;
   }
   /* ------- Close Home ------- */
+
+  /* ------- Open Deposit ------- */
+  .deposit-account {
+    row-gap: 5px;
+    font-size: 0.6rem;
+  }
+  /* ------- Close Deposit ------- */
+
+  /* ------- Open Affiliate ------- */
+  .rosegold-light-border {
+    border-radius: 25px;
+    border: 5px solid transparent;
+  }
+
+  .copy-link {
+    max-width: 80%;
+  }
+
+  .social-wrapper {
+    max-width: 80%;
+  }
+
+  .social-wrapper a img {
+    width: 100%;
+  }
+
+  .rosegold-tabs-warpper {
+    max-width: 80%;
+  }
+  /* ------- Close Affiliate ------- */
+
+  /* ------- Open Gift Voucher ------- */
+  .gift-voucher-content img {
+    width: 80%;
+  }
+
+  .gift-voucher-content button {
+    height: 40px;
+    width: 50%;
+  }
+  /* ------- Close Gift Voucher ------- */
+
+  /* ------- Open Lucky Wheel ------- */
+  .lucky-wheel-content img:first-child {
+    width: 80%;
+  }
+
+  .spintext {
+    position: absolute;
+    width: 120px;
+    top: -0.8rem;
+  }
+
+  .redeemtext {
+    position: absolute;
+    width: 100px;
+    top: -0.5rem;
+  }
+
+  .lucky-wheel-content .block-content {
+    width: 70%;
+  }
+
+  /* ------- Close Lucky Wheel ------- */
+
+  /* ------- Open Change Password ------- */
+  .change-password-content {
+    max-width: 100%;
+  }
+  /* ------- Close Change Password ------- */
+
+  /* ------- Open Global ------- */
+  .rosegold-border {
+    border-radius: 25px;
+  }
+
+  .rosegold-border.inner {
+    font-size: 5.5rem;
+    line-height: 17vw;
+    top: 2vh;
+  }
+
+  .rosegold-border.inner.w-responsive {
+    width: 85vw;
+  }
+
+  .rosegold-block {
+    border-radius: 12px;
+    padding: 0.13rem;
+  }
+
+  .rosegold-block-inner {
+    border-radius: 8px;
+  }
+
+  .bank-image {
+    width: 100%;
+  }
+
+  .rosegold-border-input {
+    width: 50%;
+  }
+  /* ------- Close Global ------- */
 }
