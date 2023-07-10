@@ -23,7 +23,7 @@
                             <input type="password" id="renew_password" name="renew_password" class="rosegold-border-input w-100">
                         </div>
                         <div class="d-flex justify-content-center mt-4">
-                            <button type="submit" class="btn rosegold-dark-btn w-75">
+                            <button type="submit" class="btn rosegold-dark-btn w-100">
                                 <?= lang('Lang.change_password.confirm') ?>
                     </form>
                 </div>
