@@ -67,79 +67,8 @@ $formatter = new CustomFormatter()
                         </div>
                     </div>
                     <div class="tab-pane fade" id="deposit" role="tabpanel">
-                        <div class="col-12 rosegold-block-table">
-                            <table class="table rosegold-table text-08">
-                                <thead>
-                                    <tr>
-                                        <th class="w-35"><?= lang('Lang.transactions_history.list') ?></th>
-                                        <th class="text-right"><?= lang('Lang.transactions_history.date') ?></th>
-                                        <th class="text-right"><?= lang('Lang.transactions_history.amount') ?></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="3" class="w-35 text-center align-middle">
-                                            <span><?= lang('Lang.transactions_history.deposit') ?></span>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                     <div class="tab-pane fade" id="withdraw" role="tabpanel">
-                        <div class="col-12 rosegold-block-table">
-                            <table class="table rosegold-table text-08">
-                                <thead>
-                                    <tr>
-                                        <th class="w-35"><?= lang('Lang.transactions_history.list') ?></th>
-                                        <th class="text-right"><?= lang('Lang.transactions_history.date') ?></th>
-                                        <th class="text-right"><?= lang('Lang.transactions_history.amount') ?></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="w-35 text-center align-middle">
-                                            <span><?= lang('Lang.transactions_history.deposit') ?></span>
-                                        </td>
-                                        <td class="text-right">
-                                            <span>2022-12-26 06:27:11</span>
-                                            <br>
-                                            <span class="text-info"><?= lang('Lang.transactions_history.pending') ?></span>
-                                        </td>
-                                        <td class="text-right align-middle">
-                                            <?= number_format(50.00, 2) ?>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-35 text-center align-middle ">
-                                            <span class="text-rosegold"><?= lang('Lang.transactions_history.withdraw') ?></span>
-                                        </td>
-                                        <td class="text-right">
-                                            <span>2022-12-25 06:27:11</span>
-                                            <br>
-                                            <span class="text-success"><?= lang('Lang.transactions_history.finished') ?></span>
-                                        </td>
-                                        <td class="text-right align-middle">
-                                            <?= number_format(50.00, 2) ?>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w-35 text-center align-middle">
-                                            <span class="text-rosegold"><?= lang('Lang.transactions_history.withdraw') ?></span>
-                                        </td>
-                                        <td class="text-right">
-                                            <span>2022-12-24 06:27:11</span>
-                                            <br>
-                                            <span class="text-danger"><?= lang('Lang.transactions_history.failed') ?></span>
-                                        </td>
-                                        <td class="text-right align-middle">
-                                            <?= number_format(50.00, 2) ?>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -292,7 +221,7 @@ $formatter = new CustomFormatter()
                 },
                 error: function(err) {
                     console.log(err);
-                    swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Logout:261']) ?>')
+                    swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Transaction:224']) ?>')
                 }
             })
         }

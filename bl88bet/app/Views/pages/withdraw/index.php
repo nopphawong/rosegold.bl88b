@@ -166,7 +166,7 @@ $formatter = new CustomFormatter()
                     },
                     error: function(err) {
                         console.log(err);
-                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Login 101']) ?>')
+                        swalError('<?= lang('Lang.dialog.confirm_btn') ?>', '<?= lang('Lang.error.something_went_wrong', ['Withdraw 169']) ?>')
                     }
                 })
             },
