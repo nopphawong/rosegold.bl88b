@@ -41,61 +41,6 @@ $formatter = new CustomFormatter()
             </div>
         </form>
 
-        <div class="visible-md">
-            <h5><?= lang('Lang.withdraw.history_last_5_withdraws') ?></h5>
-            <div class="col-12 rosegold-block-table">
-                <table class="table rosegold-table text-08">
-                    <thead>
-                        <tr>
-                            <th class="w-35"><?= lang('Lang.withdraw.list') ?></th>
-                            <th class="text-right"><?= lang('Lang.withdraw.date') ?></th>
-                            <th class="text-right"><?= lang('Lang.withdraw.amount') ?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="w-35 text-center align-middle">
-                                <?= lang('Lang.withdraw.withdraw_table') ?>
-                            </td>
-                            <td class="text-right">
-                                <span>2022-12-26 06:27:11</span>
-                                <br>
-                                <span class="text-info"><?= lang('Lang.withdraw.pending') ?></span>
-                            </td>
-                            <td class="text-right align-middle">
-                                <?= number_format(50.00, 2) ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-35 text-center align-middle">
-                                <?= lang('Lang.withdraw.withdraw_table') ?>
-                            </td>
-                            <td class="text-right">
-                                <span>2022-12-25 06:27:11</span>
-                                <br>
-                                <span class="text-success"><?= lang('Lang.withdraw.finished') ?></span>
-                            </td>
-                            <td class="text-right align-middle">
-                                <?= number_format(50.00, 2) ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-35 text-center align-middle">
-                                <?= lang('Lang.withdraw.withdraw_table') ?>
-                            </td>
-                            <td class="text-right">
-                                <span>2022-12-24 06:27:11</span>
-                                <br>
-                                <span class="text-danger"><?= lang('Lang.withdraw.finished') ?></span>
-                            </td>
-                            <td class="text-right align-middle">
-                                <?= number_format(50.00, 2) ?>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </div>
 </main>
 

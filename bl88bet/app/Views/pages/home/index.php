@@ -33,7 +33,7 @@ $formatter = new CustomFormatter()
                                 <div class="wallet-total-credit">
                                     <span class=""><?= lang('Lang.home.credit_balance') ?></span>
                                     <?php if (isset($result) && isset($result->status) && $result->status == 1) : ?>
-                                        <p id="d_credit" class="member-credit"><?= number_to_currency(1000.00, 'THB', 'th', 2); ?></p>
+                                        <p id="d_credit" class="member-credit"><?= number_to_currency($result->data->webbalance, 'THB', 'th', 2); ?></p>
                                     <?php else : ?>
                                         <p id="d_credit" class="member-credit">???</p>
                                     <?php endif; ?>
