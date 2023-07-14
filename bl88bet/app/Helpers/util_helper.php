@@ -21,8 +21,19 @@ function trimReplace($search, $replace, $subject): string
 function transformAuthData($data): object
 {
     $index = array_search(WEB_AGENT, array_column($data->weblists, 'webag'));
+    $bank = explode('-', $data->bank);
+    $newData = [
+        'userid' => $data->userid,
+        'name' => $data->name,
+        'tel' => $data->tel,
+        'email' => $data->email,
+        'lineid' => $data->lineid,
+        'bankid' => $bank[0],
+        'bankno' => $bank[1],
+        'token' => $data->token,
+    ];
     $result = (object) array_merge(
-        (array) $data,
+        (array) $newData,
         (array) $data->weblists[$index]
     );
     unset($result->weblists);

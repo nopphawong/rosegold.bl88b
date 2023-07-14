@@ -3,25 +3,25 @@
         <ul class="nav-menu">
             <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/') ?>">
-                    <img src="assets/images/button/bag_icon.png">
+                    <img src="<?= base_url() ?>assets/images/button/bag_icon.png">
                     <span class="text-glow"><?= lang('Lang.home.wallet') ?></span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link g_casino" href="<?= site_url('casino') ?>">
-                    <img src="assets/images/casino_cion.png">
+                    <img src="<?= base_url() ?>assets/images/casino_cion.png">
                     <span class="text-glow"><?= lang('Lang.casino.casino') ?></span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link g_slot" href="<?= site_url('slot') ?>">
-                    <img src="assets/images/slot_icon.png">
+                    <img src="<?= base_url() ?>assets/images/slot_icon.png">
                     <span class="text-glow"><?= lang('Lang.slot.slot') ?></span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link g_sport" href="<?= site_url('sport') ?>">
-                    <img src="assets/images/ball_icon.png">
+                    <img src="<?= base_url() ?>assets/images/ball_icon.png">
                     <span class="text-glow"><?= lang('Lang.sport.sport') ?></span>
                 </a>
             </li>
@@ -48,7 +48,7 @@
 <!-- Loader JS -->
 <?= script_tag('assets/js/loader.js') ?>
 <!-- Utility JS -->
-<?= script_tag('assets/js/util.js?v=1.1.1') ?>
+<?= script_tag('assets/js/util.js?v=1.1.2') ?>
 
 <script>
     $("img.lazy").lazyload();

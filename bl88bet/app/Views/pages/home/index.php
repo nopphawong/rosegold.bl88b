@@ -41,9 +41,9 @@ $formatter = new CustomFormatter()
                                 <button onclick="refreshCredit()" class="btn rosegold-light-btn wallet-btn"><?= lang('Lang.home.refresh_btn') ?></button>
                                 <div class="wallet-turnover-container">
                                     <div class="wallet-datetime">
-                                        <img src="assets/images/misc/calendar.png" class="w-10">
+                                        <img src="<?= base_url() ?>assets/images/misc/calendar.png" class="w-10">
                                         <div id="real_date" class="text-07">01/01/2023</div>
-                                        <img src="assets/images/misc/time.png" class="w-10">
+                                        <img src="<?= base_url() ?>assets/images/misc/time.png" class="w-10">
                                         <div id="real_time" class="text-07">00:00:00</div>
                                     </div>
                                 </div>
@@ -60,36 +60,36 @@ $formatter = new CustomFormatter()
                     <div class="menu-desktop">
                         <div>
                             <a href="<?= site_url('deposit') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/dp.png">
+                                <img src="<?= base_url() ?>assets/images/button/dp.png">
                             </a>
                             <a href="<?= site_url('withdraw') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/wd.png">
+                                <img src="<?= base_url() ?>assets/images/button/wd.png">
                             </a>
                             <a href="<?= site_url('transactions-history') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/tx.png">
+                                <img src="<?= base_url() ?>assets/images/button/tx.png">
                             </a>
                             <a href="<?= site_url('promotion') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/promotion.png">
+                                <img src="<?= base_url() ?>assets/images/button/promotion.png">
                             </a>
                             <a href="<?= site_url('affiliate') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/affiliate.png">
+                                <img src="<?= base_url() ?>assets/images/button/affiliate.png">
                             </a>
                         </div>
                         <div>
                             <a href="<?= site_url('wheel') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/wheel.png">
+                                <img src="<?= base_url() ?>assets/images/button/wheel.png">
                             </a>
                             <a href="<?= site_url('reward') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/reward.png">
+                                <img src="<?= base_url() ?>assets/images/button/reward.png">
                             </a>
                             <a href="<?= site_url('coupon') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/coupon.png">
+                                <img src="<?= base_url() ?>assets/images/button/coupon.png">
                             </a>
                             <a href="<?= site_url('profile') ?>" class="btn menu-btn">
-                                <img src="assets/images/button/profile.png">
+                                <img src="<?= base_url() ?>assets/images/button/profile.png">
                             </a>
                             <a id="logout_btn" href="#" class="btn menu-btn">
-                                <img src="assets/images/button/logout.png">
+                                <img src="<?= base_url() ?>assets/images/button/logout.png">
                             </a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ $formatter = new CustomFormatter()
                                 <div class="menu-item-inner">
                                     <div class="menu-item-icon">
                                         <div class="menu-item-content">
-                                            <img src="assets/images/button/deposit.png">
+                                            <img src="<?= base_url() ?>assets/images/button/deposit.png">
                                             <span class="text-05"><?= lang('Lang.home.deposit') ?></span>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@ $formatter = new CustomFormatter()
                                 <div class="menu-item-inner">
                                     <div class="menu-item-icon">
                                         <div class="menu-item-content">
-                                            <img src="assets/images/button/withdraw.png">
+                                            <img src="<?= base_url() ?>assets/images/button/withdraw.png">
                                             <span class="text-05"><?= lang('Lang.home.withdraw') ?></span>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@ $formatter = new CustomFormatter()
                                 <div class="menu-item-inner">
                                     <div class="menu-item-icon">
                                         <div class="menu-item-content">
-                                            <img src="assets/images/button/aff.png">
+                                            <img src="<?= base_url() ?>assets/images/button/aff.png">
                                             <span class="text-05"><?= lang('Lang.home.affiliate') ?></span>
                                         </div>
                                     </div>
@@ -133,7 +133,7 @@ $formatter = new CustomFormatter()
                                     <div class="menu-item-inner-group">
                                         <div class="menu-item-icon-group">
                                             <div class="menu-item-content-group">
-                                                <img src="assets/images/button/prm.png">
+                                                <img src="<?= base_url() ?>assets/images/button/prm.png">
                                                 <span class="text-05"><?= lang('Lang.home.promotion') ?></span>
                                             </div>
                                         </div>
@@ -143,7 +143,7 @@ $formatter = new CustomFormatter()
                                     <div class="menu-item-inner-group">
                                         <div class="menu-item-icon-group">
                                             <div class="menu-item-content-group">
-                                                <img src="assets/images/button/txhis.png">
+                                                <img src="<?= base_url() ?>assets/images/button/txhis.png">
                                                 <span class="text-05"><?= lang('Lang.home.transactions_history') ?></span>
                                             </div>
                                         </div>
@@ -157,7 +157,7 @@ $formatter = new CustomFormatter()
                                 <div class="menu-item-inner">
                                     <div class="menu-item-icon">
                                         <div class="menu-item-content">
-                                            <img src="assets/images/button/reward1.png">
+                                            <img src="<?= base_url() ?>assets/images/button/reward1.png">
                                             <span class="font-size-05"><?= lang('Lang.home.reward') ?></span>
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@ $formatter = new CustomFormatter()
                                 <div class="menu-item-inner">
                                     <div class="menu-item-icon">
                                         <div class="menu-item-content">
-                                            <img src="assets/images/button/coupon1.png">
+                                            <img src="<?= base_url() ?>assets/images/button/coupon1.png">
                                             <span class="font-size-05"><?= lang('Lang.home.coupon') ?></span>
                                         </div>
                                     </div>
@@ -178,7 +178,7 @@ $formatter = new CustomFormatter()
                                 <div class="menu-item-inner">
                                     <div class="menu-item-icon">
                                         <div class="menu-item-content">
-                                            <img src="assets/images/button/wheel2.png">
+                                            <img src="<?= base_url() ?>assets/images/button/wheel2.png">
                                             <span class="font-size-05"><?= lang('Lang.home.lucky_wheel') ?></span>
                                         </div>
                                     </div>
@@ -193,12 +193,12 @@ $formatter = new CustomFormatter()
             <div class="content-right">
                 <div>
                     <a href="http://line.me/ti/p/~@882yztsp" target="_blank" rel="noopener noreferrer" class="line-fab">
-                        <img src="assets/images/misc/line.png" style="width: 5vw;">
+                        <img src="<?= base_url() ?>assets/images/misc/line.png" style="width: 5vw;">
                     </a>
                 </div>
                 <div class="d-flex flex-column">
-                    <p><?= lang('Lang.home.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
-                    <p><?= lang('Lang.home.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
+                    <p><?= lang('Lang.home.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bankno)]) ?></p>
+                    <p><?= lang('Lang.home.bank_name', [$formatter->bank_format(session()->data->bankid)]) ?></p>
                 </div>
 
             </div>

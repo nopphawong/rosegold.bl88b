@@ -7,6 +7,15 @@ const swalError = (buttonText = 'OK', title = '', text = '') => {
   })
 }
 
+const swalWarnig = (buttonText = 'OK', title = '', text = '') => {
+  Swal.fire({
+    icon: 'warning',
+    title,
+    text,
+    confirmButtonText: buttonText,
+  })
+}
+
 const swalFlashAlert = (title = '', icon = 'success', timer = 1500) => {
   Swal.fire({
     icon,

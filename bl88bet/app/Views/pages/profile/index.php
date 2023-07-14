@@ -17,12 +17,12 @@ $formatter = new CustomFormatter()
                 <div class="rosegold-block-inner">
                     <div class="row mb-2">
                         <div class="col-4">
-                            <img src="assets/images/misc/scb.png" class="bank-image">
+                            <img src="<?= base_url() ?><?= base_url() ?>assets/images/misc/scb.png" class="bank-image">
                         </div>
                         <div class="col-8">
                             <div class="blog-detail text-shrink">
-                                <p><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bank)]) ?></p>
-                                <p><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->data->bank)]) ?></p>
+                                <p><?= lang('Lang.profile.bank_account_number', [$formatter->bank_ac_no_format(session()->data->bankno)]) ?></p>
+                                <p><?= lang('Lang.profile.bank_name', [$formatter->bank_format(session()->data->bankid)]) ?></p>
                                 <p><?= lang('Lang.profile.username', [session()->data->name]) ?></p>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ $formatter = new CustomFormatter()
                     </div>
                     <div class="d-flex justify-content-center">
                         <a href="<?= site_url('change-password') ?>" class="btn rosegold-dark-btn w-75">
-                            <img src="assets/images/misc/cpass.png">
+                            <img src="<?= base_url() ?><?= base_url() ?>assets/images/misc/cpass.png">
                             <?= lang('Lang.profile.change_password') ?> </a>
                     </div>
                 </div>

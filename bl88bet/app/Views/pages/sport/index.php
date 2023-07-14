@@ -10,9 +10,9 @@
                     <div class="col-12 col-md-3 p-1 text-center">
                         <a href="#" onclick="playgame(event, '<?= $obj->code ?>')">
                             <?php if (session()->screen_width < 768) : ?>
-                                <img src="assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" data-original="assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
+                                <img src="<?= base_url() ?>assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" data-original="<?= base_url() ?>assets/images/sport/mobile/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
                             <?php else : ?>
-                                <img src="assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" data-original="assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
+                                <img src="<?= base_url() ?>assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" data-original="<?= base_url() ?>assets/images/sport/desktop/<?= strtolower($obj->code) ?>.png" class="img-fluid w-90 lazy" alt="<?= strtolower($obj->name) ?>">
                             <?php endif; ?>
                         </a>
                     </div>

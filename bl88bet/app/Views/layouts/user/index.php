@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-md justify-content-between navbar-roseglod">
             <div class="navbar-header">
                 <a href="<?= site_url('/') ?>">
-                    <img src="assets/images/misc/logo-text.png" class="navbar-logo">
+                    <img src="<?= base_url() ?>assets/images/misc/logo-text.png" class="navbar-logo">
                 </a>
             </div>
 
@@ -12,7 +12,7 @@
                     <li class="nav-item w-25">
                         <a href="<?= site_url('/') ?>">
                             <div class="menu-icon w-25">
-                                <img src="assets/images/button/home.png" alt="home">
+                                <img src="<?= base_url() ?>assets/images/button/home.png" alt="home">
                             </div>
                             <div class="menu-label">
                                 <p class="text-black"><?= lang('Lang.home.home') ?></p>
@@ -22,7 +22,7 @@
                     <li class="nav-item w-25">
                         <a href="<?= site_url('casino') ?>">
                             <div class="menu-icon w-25">
-                                <img src="assets/images/button/casino.png" alt="casino">
+                                <img src="<?= base_url() ?>assets/images/button/casino.png" alt="casino">
                             </div>
                             <div class="menu-label">
                                 <p class="text-black"><?= lang('Lang.casino.casino') ?></p>
@@ -32,7 +32,7 @@
                     <li class="nav-item w-25">
                         <a href="<?= site_url('slot') ?>">
                             <div class="menu-icon w-35">
-                                <img src="assets/images/button/slot.png" alt="slot">
+                                <img src="<?= base_url() ?>assets/images/button/slot.png" alt="slot">
                             </div>
                             <div class="menu-label">
                                 <p class="text-black"><?= lang('Lang.slot.slot') ?></p>
@@ -42,7 +42,7 @@
                     <li class="nav-item w-25">
                         <a href="<?= site_url('sport') ?>">
                             <div class="menu-icon w-25">
-                                <img src="assets/images/button/sport.png" alt="sport">
+                                <img src="<?= base_url() ?>assets/images/button/sport.png" alt="sport">
                             </div>
                             <div class="menu-label">
                                 <p class="text-black"><?= lang('Lang.sport.sport') ?></p>
@@ -71,14 +71,14 @@
 
         <div class="mobile-header">
             <a class="mobile-header-menu mobile-head-icon" href="<?= site_url('profile') ?>">
-                <img src="assets/images/icons/profile_icon.png">
+                <img src="<?= base_url() ?>assets/images/icons/profile_icon.png">
                 <span><?= lang('Lang.home.profile') ?></span>
             </a>
             <a class="mobile-header-menu mobile-head-logo">
-                <img src="assets/images/icons/bl88_text.png">
+                <img src="<?= base_url() ?>assets/images/icons/bl88_text.png">
             </a>
             <a class="mobile-header-menu mobile-head-icon" target="_blank" href="http://line.me/ti/p/~@882yztsp">
-                <img src="assets/images/button/line.png">
+                <img src="<?= base_url() ?>assets/images/button/line.png">
                 <span><?= lang('Lang.home.contact_us') ?></span>
             </a>
         </div>

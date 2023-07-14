@@ -608,7 +608,7 @@ html {
 }
 /* ------- Close Deposit ------- */
 
-/* ------- Open History Widthdraw ------- */
+/* ------- Open Transction ------- */
 .transaction-block {
   border: 2px solid transparent;
   border-radius: 12px;
@@ -633,7 +633,26 @@ html {
   text-align: center;
   width: 135px;
 }
-/* ------- Close History Widthdraw ------- */
+
+.transaction.rosegold-tabs-warpper .nav.nav-tabs .nav-item {
+  width: 33.3333%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.transaction.rosegold-tabs-warpper {
+  margin: 0;
+  max-width: 100%;
+}
+
+.transaction .tab-pane {
+  padding: 0;
+}
+
+.transaction .rosegold-block-table {
+  border-radius: 0;
+}
+/* ------- Close Transction ------- */
 
 /* ------- Open Promotion ------- */
 .get-promotion-btn {
@@ -723,59 +742,11 @@ html {
   width: 80%;
 }
 
-.rosegold-tabs-warpper {
-  max-width: 50%;
-  margin: 1rem auto;
-  border-radius: 25px 25px 10px 10px;
-  border: 3px solid transparent;
-  background: linear-gradient(252deg, #4a4949 0%, #1a1a1a 50%, #171717 100%)
-      padding-box,
-    linear-gradient(to right, #efaaa4 0%, #ce6867 46%, rgb(229 113 172) 100%)
-      border-box;
-}
-
-.rosegold-tabs-warpper .nav-tabs {
-  border-bottom: 3px solid #dee2e6;
-}
-
-.rosegold-tabs-warpper .nav.nav-tabs .nav-item {
+.affiliate.rosegold-tabs-warpper .nav.nav-tabs .nav-item {
   width: 50%;
   text-align: center;
   margin-bottom: 0;
 }
-
-.rosegold-tabs-warpper .nav-tabs .nav-link {
-  border: none;
-}
-
-.rosegold-tabs-warpper .nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
-  border: none;
-}
-
-.rosegold-tabs-warpper .nav-tabs .nav-item a.nav-link.active {
-  color: #fff;
-  background: linear-gradient(
-      to right,
-      #efaaa4 0%,
-      #ce6867 46%,
-      rgb(229 113 172) 100%
-    )
-    border-box;
-}
-
-.rosegold-tabs-warpper .nav-tabs .nav-item:first-child a.nav-link.active {
-  border-radius: 19px 0 0;
-}
-
-.rosegold-tabs-warpper .nav-tabs .nav-item:last-child a.nav-link.active {
-  border-radius: 0 19px 0 0;
-}
-
-.tab-pane {
-  padding: 15px;
-}
-
 /* ------- Close Affiliate ------- */
 
 /* ------- Open Reward ------- */
@@ -1106,6 +1077,53 @@ html {
   font-size: 0.7rem !important;
   color: red;
 }
+
+.rosegold-tabs-warpper {
+  max-width: 50%;
+  margin: 1rem auto;
+  border-radius: 25px 25px 10px 10px;
+  border: 3px solid transparent;
+  background: linear-gradient(252deg, #4a4949 0%, #1a1a1a 50%, #171717 100%)
+      padding-box,
+    linear-gradient(to right, #efaaa4 0%, #ce6867 46%, rgb(229 113 172) 100%)
+      border-box;
+}
+
+.rosegold-tabs-warpper .nav-tabs {
+  border-bottom: 3px solid #dee2e6;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-link {
+  border: none;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-item a.nav-link.active {
+  color: #fff;
+  background: linear-gradient(
+      to right,
+      #efaaa4 0%,
+      #ce6867 46%,
+      rgb(229 113 172) 100%
+    )
+    border-box;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-item:first-child a.nav-link.active {
+  border-radius: 19px 0 0;
+}
+
+.rosegold-tabs-warpper .nav-tabs .nav-item:last-child a.nav-link.active {
+  border-radius: 0 19px 0 0;
+}
+
+.tab-pane {
+  padding: 15px;
+}
 /* ------- Close Global ------- */
 
 @media screen and (max-width: 1200px) {
@@ -1184,6 +1202,13 @@ html {
   }
   /* ------- Close Deposit ------- */
 
+  /* ------- Open Transction ------- */
+  .transaction .tab-pane {
+    padding: 10px;
+    overflow-y: auto;
+  }
+  /* ------- Close Transction ------- */
+
   /* ------- Open Affiliate ------- */
   .rosegold-light-border {
     border-radius: 25px;
@@ -1202,8 +1227,12 @@ html {
     width: 100%;
   }
 
-  .rosegold-tabs-warpper {
+  .affiliate.rosegold-tabs-warpper {
     max-width: 80%;
+  }
+
+  .transaction.rosegold-tabs-warpper {
+    max-width: 100%;
   }
   /* ------- Close Affiliate ------- */
 
@@ -1279,4 +1308,36 @@ html {
     width: 50%;
   }
   /* ------- Close Global ------- */
+}
+
+@media screen and (max-width: 767px) and (max-height: 920px) {
+  /* ------- Open Transction ------- */
+  .transaction .tab-pane {
+    height: 64vh;
+  }
+  /* ------- Close Transction ------- */
+}
+
+@media screen and (max-width: 767px) and (max-height: 852px) {
+  /* ------- Open Transction ------- */
+  .transaction .tab-pane {
+    height: 62vh;
+  }
+  /* ------- Close Transction ------- */
+}
+
+@media screen and (max-width: 767px) and (max-height: 780px) {
+  /* ------- Open Transction ------- */
+  .transaction .tab-pane {
+    height: 56vh;
+  }
+  /* ------- Close Transction ------- */
+}
+
+@media screen and (max-width: 767px) and (max-height: 700px) {
+  /* ------- Open Transction ------- */
+  .transaction .tab-pane {
+    height: 52vh;
+  }
+  /* ------- Close Transction ------- */
 }

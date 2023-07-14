@@ -32,20 +32,20 @@
 
         <div class="social-wrapper">
             <a href="https://www.facebook.com/sharer/sharer.php?u=https://reg2bl.com/DoLHf&amp;quote=สมัครเพื่อร่วมสนุกกับ BL88BET" target="blank">
-                <img src="assets/images/facebook.png">
+                <img src="<?= base_url() ?>assets/images/facebook.png">
             </a>
             <a href="https://twitter.com/intent/tweet?url=https://reg2bl.com/DoLHf&amp;via=bl88bet&amp;text=สมัครสมาชิกเพื่อร่วมสนุก กับ BL88BET" target="blank">
-                <img src="assets/images/twitter.png">
+                <img src="<?= base_url() ?>assets/images/twitter.png">
             </a>
             <a href="https://line.me/R/share?text=https://reg2bl.com/DoLHf สมัครเพื่อร่วมสนุกกับ BL88BET" target="blank">
-                <img src="assets/images/line_cicle.png">
+                <img src="<?= base_url() ?>assets/images/line_cicle.png">
             </a>
             <a href="https://t.me/share/url?url=https://reg2bl.com/DoLHf&amp;text=สมัครเพื่อร่วมสนุกกับ BL88BET" target="blank">
-                <img src="assets/images/telegram.png">
+                <img src="<?= base_url() ?>assets/images/telegram.png">
             </a>
         </div>
 
-        <div class="rosegold-tabs-warpper">
+        <div class="affiliate rosegold-tabs-warpper">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#get_income" role="tab" aria-controls="home" aria-selected="true"><?= lang('Lang.affiliate.income') ?></a>

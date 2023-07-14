@@ -10,7 +10,7 @@
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Rose Gold CSS -->
-    <?= link_tag('assets/css/rosegold.css?v=1.1.4') ?>
+    <?= link_tag('assets/css/rosegold.css?v=1.1.7') ?>
     <!-- Custom Bootrap -->
     <?= link_tag('assets/css/bs_modify.css?v=1.0.7') ?>
     <!-- All CSS -->

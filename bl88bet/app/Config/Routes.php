@@ -47,14 +47,20 @@ $routes->match(['get', 'post'], '/change-password', 'ChangePassword::index', ['f
 $routes->post('/change-password/submit', 'ChangePassword::submit');
 
 $routes->get('/promotion', 'Home::promotionPage', ['filter' => 'authGuard']);
-$routes->get('/transactions-history', 'Transactions::index', ['filter' => 'authGuard']);
+
+$routes->match(['get', 'post'], '/transactions-history', 'Transactions::index', ['filter' => 'authGuard']);
+$routes->get('/transactions/all', 'Transactions::getAll', ['filter' => 'authGuard']);
+$routes->get('/transactions/deposit', 'Transactions::getDeposit', ['filter' => 'authGuard']);
+$routes->get('/transactions/withdraw', 'Transactions::getWithdraw', ['filter' => 'authGuard']);
+
 $routes->get('/reward', 'Home::rewardPage', ['filter' => 'authGuard']);
 $routes->get('/logout', 'Home::logout', ['filter' => 'authGuard']);
 
-$routes->get('/deposit', 'Deposit::index', ['filter' => 'authGuard']);
-$routes->match(['get', 'post'], '/withdraw', 'Withdraw::index', ['filter' => 'authGuard']);
-$routes->post('/withdraw/submit', 'Withdraw::submit');
+$routes->match(['get', 'post'], '/deposit', 'Deposit::index', ['filter' => 'authGuard']);
+$routes->post('/deposit/submit', 'Deposit::submit', ['filter' => 'authGuard']);
 
+$routes->match(['get', 'post'], '/withdraw', 'Withdraw::index', ['filter' => 'authGuard']);
+$routes->post('/withdraw/submit', 'Withdraw::submit', ['filter' => 'authGuard']);
 
 $routes->get('/affiliate', 'Affiliate::index', ['filter' => 'authGuard']);
 $routes->get('/coupon', 'Coupon::index', ['filter' => 'authGuard']);

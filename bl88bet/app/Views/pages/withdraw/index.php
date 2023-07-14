@@ -18,12 +18,12 @@ $formatter = new CustomFormatter()
                     <div class="rosegold-block-inner">
                         <div class="row mb-2">
                             <div class="col-4">
-                                <img src="assets/images/misc/scb.png" class="bank-image">
+                                <img src="<?= base_url() ?>assets/images/misc/scb.png" class="bank-image">
                             </div>
                             <div class="col-8">
                                 <div class="blog-detail text-shrink">
-                                    <p><?= lang('Lang.withdraw.bank_account_number') ?> <span id="accNo"><?= $formatter->bank_ac_no_format(session()->data->bank) ?></span></p>
-                                    <p><?= lang('Lang.withdraw.bank_name') ?> <span id="bankName"><?= $formatter->bank_format(session()->data->bank) ?></span></p>
+                                    <p><?= lang('Lang.withdraw.bank_account_number') ?> <span id="accNo"><?= $formatter->bank_ac_no_format(session()->data->bankno) ?></span></p>
+                                    <p><?= lang('Lang.withdraw.bank_name') ?> <span id="bankName"><?= $formatter->bank_format(session()->data->bankid) ?></span></p>
                                     <p><?= lang('Lang.withdraw.username') ?> <span id="accName"><?= session()->data->name ?></span></p>
                                 </div>
                             </div>
@@ -40,7 +40,6 @@ $formatter = new CustomFormatter()
                 <button type="submit" class="btn rosegold-light-btn w-100 btn-md"><?= lang('Lang.withdraw.confirm') ?></button>
             </div>
         </form>
-
 
         <div class="visible-md">
             <h5><?= lang('Lang.withdraw.history_last_5_withdraws') ?></h5>
@@ -104,23 +103,35 @@ $formatter = new CustomFormatter()
 
 <script>
     $(function() {
-        $("#m_withdraw_form, #withdraw_form").validate({
+        $.validator.addMethod(
+            'check_credit',
+            function(value, element) {
+                console.log(Number(value), Number('<?= session()->webbalance ?>'));
+                return Number(value) < Number('<?= session()->webbalance ?>')
+            }
+        )
+
+        $("#withdraw_form").validate({
             rules: {
                 withdraw_amount: {
                     required: true,
-                    number: true
+                    min: 1,
+                    digits: true,
+                    check_credit: true
                 }
             },
             messages: {
                 withdraw_amount: {
                     required: '<?= lang('Lang.withdraw.amount_is_required') ?>',
-                    number: '<?= lang('Lang.withdraw.amount_must_be_number') ?>',
+                    min: '<?= lang('Lang.withdraw.amount_is_min') ?>',
+                    digits: '<?= lang('Lang.withdraw.amount_is_digits') ?>',
+                    check_credit: '<?= lang('Lang.withdraw.amount_is_less_than_credit') ?>',
                 }
             },
             submitHandler: function(form) {
                 const formData = new FormData(form)
                 const method = $(form).attr('method')
-                console.log(formData.get('withdraw_amount'));;
+                console.log(formData.get('withdraw_amount'));
                 $.ajax({
                     url: '<?= base_url('/withdraw/submit') ?>',
                     method,
@@ -133,26 +144,25 @@ $formatter = new CustomFormatter()
                     },
                     success: function(response) {
                         spinner('hide')
-                        console.log(response);
-                        // try {
-                        //     const {
-                        //         status,
-                        //         msg,
-                        //         data
-                        //     } = JSON.parse(response)
-                        //     if (!status) {
-                        //         swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
-                        //     } else {
-                        //         swalFlashAlert(msg)
-                        //         setTimeout(function() {
-                        //             window.location = './'
-                        //         }, 1000)
-                        //     }
-                        // } catch (err) {
-                        //     toastr.error(err, '', {
-                        //         timeOut: 5000
-                        //     })
-                        // }
+                        try {
+                            const {
+                                status,
+                                msg,
+                                deposit_id
+                            } = JSON.parse(response)
+                            if (!status) {
+                                swalError('<?= lang('Lang.dialog.confirm_btn') ?>', msg)
+                            } else {
+                                swalFlashAlert(msg)
+                                setTimeout(function() {
+                                    window.location = '/transactions-history'
+                                }, 1000)
+                            }
+                        } catch (err) {
+                            toastr.error(err, '', {
+                                timeOut: 5000
+                            })
+                        }
                     },
                     error: function(err) {
                         console.log(err);

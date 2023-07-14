@@ -17,7 +17,7 @@ class Withdraw extends Home
                 'token' => session()->data->token,
                 'web' => session()->data->web,
                 'webuser' => session()->data->webuser,
-                'amount' => $this->request->getVar('withdraw_amount'),
+                'amount' => number_format($this->request->getVar('withdraw_amount'), 2),
             ];
             // print_r($body);
             // exit();

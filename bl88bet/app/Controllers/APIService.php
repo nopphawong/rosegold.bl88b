@@ -22,6 +22,11 @@ class APIService extends BaseController
             'm_weblogin',
             'm_uchangepass',
             'm_uwithdraw',
+            'm_bankdeposit',
+            'm_udeposit',
+            'm_udidwidlists',
+            'm_udepositlists',
+            'm_uwithdrawlists',
         ];
 
         if (in_array($path, $endpoints)) {

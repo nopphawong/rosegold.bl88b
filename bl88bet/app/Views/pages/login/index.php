@@ -3,8 +3,8 @@
 <?= $this->section('content'); ?>
 
 <div class="col text-right">
-    <a href="<?= site_url('lang/th'); ?>"><img src="assets/images/th.png" class="lang"></a>
-    <a href="<?= site_url('lang/en'); ?>"><img src="assets/images/en.png" class="lang"></a>
+    <a href="<?= site_url('lang/th'); ?>"><img src="<?= base_url() ?>assets/images/th.png" class="lang"></a>
+    <a href="<?= site_url('lang/en'); ?>"><img src="<?= base_url() ?>assets/images/en.png" class="lang"></a>
 </div>
 <h1 class="text-center"><?= lang('Lang.login.login') ?></h1>
 <p class="text-white-50"><?= lang('Lang.login.for_member_login') ?><?= session()->logged_in ?></p>

@@ -28,7 +28,7 @@ $locale = $language->getLocale();
                 <div class="card-dark text-center p-1 p-md-3">
                     <div class="reward-content">
                         <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <img class="m-2" src="<?= base_url() ?>assets/images/rewards/100.png">
                         <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
                     </div>
                     <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
@@ -38,7 +38,7 @@ $locale = $language->getLocale();
                 <div class="card-dark text-center p-1 p-md-3">
                     <div class="reward-content">
                         <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <img class="m-2" src="<?= base_url() ?>assets/images/rewards/100.png">
                         <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
                     </div>
                     <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
@@ -48,7 +48,7 @@ $locale = $language->getLocale();
                 <div class="card-dark text-center p-1 p-md-3">
                     <div class="reward-content">
                         <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <img class="m-2" src="<?= base_url() ?>assets/images/rewards/100.png">
                         <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
                     </div>
                     <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
@@ -58,7 +58,7 @@ $locale = $language->getLocale();
                 <div class="card-dark text-center p-1 p-md-3">
                     <div class="reward-content">
                         <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <img class="m-2" src="<?= base_url() ?>assets/images/rewards/100.png">
                         <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
                     </div>
                     <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
@@ -68,7 +68,7 @@ $locale = $language->getLocale();
                 <div class="card-dark text-center p-1 p-md-3">
                     <div class="reward-content">
                         <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <img class="m-2" src="<?= base_url() ?>assets/images/rewards/100.png">
                         <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
                     </div>
                     <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
@@ -78,7 +78,7 @@ $locale = $language->getLocale();
                 <div class="card-dark text-center p-1 p-md-3">
                     <div class="reward-content">
                         <p class="text-08 text-glow"><?= lang('Lang.reward.credit_to_chaged', [100]) ?></p>
-                        <img class="m-2" src="assets/images/rewards/100.png">
+                        <img class="m-2" src="<?= base_url() ?>assets/images/rewards/100.png">
                         <p class="text-08"><?= lang('Lang.reward.redeem_points', [100]) ?></p>
                     </div>
                     <button class="btn rosegold-light-btn mt-3 mb-2 mb-md-0 mx-auto"><?= lang('Lang.reward.get_reward') ?></button>
