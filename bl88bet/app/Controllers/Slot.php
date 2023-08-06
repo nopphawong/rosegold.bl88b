@@ -18,7 +18,7 @@ class Slot extends Home
         $result = json_decode($response);
         $this->viewData['result'] = $result;
         if (!$result->status)
-            return  $this->cv->userView('pages/slot/index', $this->headerInfo);
+            return  $this->cv->lobbyView('pages/slot/index', $this->headerInfo);
 
 
         $filteredData = array_filter(
@@ -29,6 +29,6 @@ class Slot extends Home
         );
         $result->data = $filteredData;
         $this->viewData['result'] = $result;
-        return  $this->cv->userView('pages/slot/index', $this->headerInfo, $this->viewData);
+        return  $this->cv->lobbyView('pages/slot/index', $this->headerInfo, $this->viewData);
     }
 }

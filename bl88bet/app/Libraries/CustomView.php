@@ -24,7 +24,7 @@ class CustomView
      * @param array $headerInfo for config in head element tag such as title.
      * @param array $viewData data in view page.
      */
-    public static function userView($page, $headerInfo, $viewData = [])
+    public static function lobbyView($page, $headerInfo, $viewData = [])
     {
         $viewData['footer'] = view('layouts/user/footer', $viewData);
         return view('layouts/user/header', $headerInfo) .

@@ -55,18 +55,18 @@ class Home extends BaseController
 
     public function index()
     {
-        return  $this->cv->userView('pages/home/index', $this->headerInfo, $this->viewData);
+        return  $this->cv->lobbyView('pages/home/index', $this->headerInfo, $this->viewData);
     }
 
     public function promotionPage()
     {
 
-        return  $this->cv->userView('pages/promotion/index', $this->headerInfo);
+        return  $this->cv->lobbyView('pages/promotion/index', $this->headerInfo);
     }
 
     public function rewardPage()
     {
-        return  $this->cv->userView('pages/reward/index', $this->headerInfo);
+        return  $this->cv->lobbyView('pages/reward/index', $this->headerInfo);
     }
 
     public function refreshCredit()

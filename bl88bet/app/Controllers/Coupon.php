@@ -6,6 +6,6 @@ class Coupon extends Home
 {
     public function index()
     {
-        return $this->cv->userView('pages/coupon/index', $this->headerInfo);
+        return $this->cv->lobbyView('pages/coupon/index', $this->headerInfo);
     }
 }

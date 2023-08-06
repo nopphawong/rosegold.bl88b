@@ -69,7 +69,7 @@ class Register extends BaseController
                     'accno' => trimReplace('-', '', $bankAccountNo),
                     'bankid' => $bankAccountID
                 ];
-
+ 
                 $service = new APIService();
                 $response = $service->serverService('m_bankverifyx', POST, $verifBankData);
                 $result = json_decode($response);

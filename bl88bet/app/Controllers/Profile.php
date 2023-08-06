@@ -6,6 +6,6 @@ class Profile extends Home
 {
     public function index()
     {
-        return  $this->cv->userView('pages/profile/index', $this->headerInfo);
+        return  $this->cv->lobbyView('pages/profile/index', $this->headerInfo);
     }
 }

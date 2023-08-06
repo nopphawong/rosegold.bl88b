@@ -15,7 +15,7 @@ class Deposit extends Home
         $response = $service->serverService('m_bankdeposit', POST, $body);
         $result = json_decode($response);
         $this->viewData['result'] = $result;
-        return $this->cv->userView('pages/deposit/index', $this->headerInfo, $this->viewData);
+        return $this->cv->lobbyView('pages/deposit/index', $this->headerInfo, $this->viewData);
     }
 
     public function submit()
@@ -32,6 +32,7 @@ class Deposit extends Home
                 'tobankid' => $this->request->getVar('bankid'),
                 'tobankno' => $this->request->getVar('bankno'),
             ];
+
             $service = new APIService();
             $response = $service->serverService('m_udeposit', POST, $body);
             $result = json_decode($response);

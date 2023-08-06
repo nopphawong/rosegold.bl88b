@@ -6,6 +6,6 @@ class Affiliate extends BaseController
 {
     public function index()
     {
-        return $this->cv->userView('pages/affiliate/index', $this->headerInfo);
+        return $this->cv->lobbyView('pages/affiliate/index', $this->headerInfo);
     }
 }

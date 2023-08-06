@@ -17,7 +17,7 @@ class Transactions extends Home
         $this->viewData['result'] = $result;
         // print_r($result);
         // exit();
-        return $this->cv->userView('pages/transactions_history/index', $this->headerInfo, $this->viewData);
+        return $this->cv->lobbyView('pages/transactions_history/index', $this->headerInfo, $this->viewData);
     }
 
     public function getAll()

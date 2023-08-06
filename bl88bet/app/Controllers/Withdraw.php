@@ -6,7 +6,7 @@ class Withdraw extends Home
 {
     public function index()
     {
-        return $this->cv->userView('pages/withdraw/index', $this->headerInfo);
+        return $this->cv->lobbyView('pages/withdraw/index', $this->headerInfo);
     }
 
     public function submit()

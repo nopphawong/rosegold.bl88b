@@ -6,7 +6,7 @@ class ChangePassword extends Home
 {
     public function index()
     {
-        return  $this->cv->userView('pages/change_password/index', $this->headerInfo);
+        return  $this->cv->lobbyView('pages/change_password/index', $this->headerInfo);
     }
 
     public function submit()

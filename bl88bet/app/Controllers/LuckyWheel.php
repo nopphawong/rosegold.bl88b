@@ -8,6 +8,6 @@ class LuckyWheel extends BaseController
 {
     public function index()
     {
-        return $this->cv->userView('pages/lucky_wheel/index', $this->headerInfo);
+        return $this->cv->lobbyView('pages/lucky_wheel/index', $this->headerInfo);
     }
 }
